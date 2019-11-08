@@ -1,0 +1,12 @@
+{
+	"name": "bluespice/bookshelfui",
+	"type": "mediawiki-extension",
+	"description": "User interface to manage hierarchical collections of wikipages.",
+	"license": "GPL-3.0-only",
+	"extra": {
+		"installer-name": "BlueSpiceBookshelfUI"
+	},
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
