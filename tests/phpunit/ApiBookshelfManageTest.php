@@ -14,7 +14,7 @@ class ApiBookshelfManageTest extends BSApiTasksTestBase {
 		return 'bs-bookshelf-manage';
 	}
 
-	public function setUp() {
+	public function setUp() : void {
 		parent::setUp();
 		$this->insertPage( 'Book:Dummy', '<bookmeta title="Dummy book"/>' );
 	}
