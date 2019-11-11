@@ -90,14 +90,10 @@
 	"MessagesDirs": {
 		"BlueSpiceBookshelfUI": [
 			"i18n"
-		],
-		"BlueSpiceBookshelfUIExtJS": [
-			"i18n/extjs"
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"BookshelfBookUIAlias": "languages/SpecialBookshelfBookUI.alias.php",
-		"BookshelfBookManagerAlias": "languages/SpecialBookshelfBookManager.alias.php"
+		"BookshelfBookUIAlias": "languages/SpecialBookshelfBookUI.alias.php"
 	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\BookshelfUI\\": "src/",
@@ -166,7 +162,7 @@
 				"bluespice.bookshelfUI.flyout.js"
 			],
 			"messages": [
-				"bs-bookshelfui-manager-titleTitle"
+				"bs-bookshelfui-manager-title"
 			],
 			"dependencies": [
 				"ext.bluespice.bookshelfUI",
@@ -185,10 +181,7 @@
 				"bs-bookshelfui-export-selection",
 				"bs-bookshelfui-save-and-modify",
 				"bs-bookshelfui-dlg-choosewikipage-title",
-				"bs-bookshelfui-dlg-choosewikipage-cbxNamespaceLabel",
-				"bs-bookshelfui-dlg-choosewikipage-cbxNamespaceEmptyText",
 				"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel",
-				"bs-bookshelfui-dlg-choosewikipage-cbxArticleEmptyText",
 				"bs-bookshelfui-dlg-choosewikipage-tfDisplayName",
 				"bs-bookshelfui-dlg-choosecategory-label",
 				"bs-bookshelfui-ctxmnu-open",
@@ -202,17 +195,16 @@
 				"bs-bookshelfui-override-tag-title",
 				"bs-bookshelfui-override-tag-text",
 				"bs-bookshelfui-nothingtoexport-text",
-				"bs-bookshelfui-bookui-savingProgressTitle",
-				"bs-bookshelfui-bookui-savingProgressText",
+				"bs-bookshelfui-bookui-savingprogress-title",
+				"bs-bookshelfui-bookui-savingprogress-text",
 				"bs-bookshelfui-empty-selection",
-				"bs-extjs-tooltip-add-mass",
+				"bs-bookshelfui-extjs-tooltip-add-mass",
 				"bs-bookshelfui-dlg-addmass-title",
 				"bs-bookshelfui-dlg-type-label",
 				"bs-bookshelfui-type-category",
 				"bs-bookshelfui-type-subpages",
 				"bs-bookshelfui-dlg-choosepc-label",
 				"bs-bookshelfui-type-pagecollection",
-				"bs-bookshelfui-export-book-title",
 				"bs-bookshelfui-export-book-text"
 			],
 			"dependencies": [
@@ -227,13 +219,13 @@
 				"bs-bookshelfui-new-book-text",
 				"bs-bookshelfui-delete-book-title",
 				"bs-bookshelfui-delete-book-text",
-				"bs-bookshelfui-manager-titleTitle",
-				"bs-bookshelfui-manager-deletingProgressText",
-				"bs-bookshelfui-manager-deletingProgressTitle",
-				"bs-bookshelfui-manager-deletionSuccessMsgWindowTitle",
-				"bs-bookshelfui-manager-deletionSuccessMsgText",
-				"bs-bookshelfui-manager-deletionFailureMsgWindowTitle",
-				"bs-bookshelfui-manager-deletionFailureMsgText",
+				"bs-bookshelfui-manager-title",
+				"bs-bookshelfui-manager-deletingprogress-text",
+				"bs-bookshelfui-manager-deletingprogress-title",
+				"bs-bookshelfui-manager-deletionsuccess-title",
+				"bs-bookshelfui-manager-deletionsuccess-text",
+				"bs-bookshelfui-manager-deletionfailure-title",
+				"bs-bookshelfui-manager-deletionfailure-text",
 				"bs-bookshelfui-dlg-copy-title",
 				"bs-bookshelfui-dlg-copy-target-name-label",
 				"bs-bookshelfui-dlg-copy-name-addition",
@@ -253,7 +245,7 @@
 		},
 		"ext.bluespice.bookshelfUI.extjs.i18n": {
 			"messages": [
-				"bs-extjs-tooltip-copy"
+				"bs-bookshelfui-extjs-tooltip-copy"
 			]
 		}
 	},

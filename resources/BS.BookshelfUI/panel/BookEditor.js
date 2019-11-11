@@ -82,7 +82,7 @@ Ext.define('BS.BookshelfUI.panel.BookEditor', {
 			id: this.getId()+'-btn-add-mass',
 			icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceBookshelfUI/resources/images/bs-btn_massadd.png',
 			iconCls: 'btn'+this.tbarHeight,
-			tooltip: mw.message('bs-extjs-tooltip-add-mass').plain(),
+			tooltip: mw.message( 'bs-bookshelfui-extjs-tooltip-add-mass' ).plain(),
 			height: 50,
 			width: 52,
 			disabled: true

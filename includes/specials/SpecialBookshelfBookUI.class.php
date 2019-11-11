@@ -72,28 +72,28 @@ class SpecialBookshelfBookUI extends ManagerBase {
 
 		$oBookMetaConfig = array(
 			'title' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-title')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-title')->text()
 			),
 			'subtitle' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-subtitle')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-subtitle')->text()
 			),
 			'author1' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-author1')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-author1')->text()
 			),
 			'author2' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-author2')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-author2')->text()
 			),
 			'docummentidentifier' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-docummentidentifier')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-docummentidentifier')->text()
 			),
 			'docummenttype' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-docummenttype')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-docummenttype')->text()
 			),
 			'department' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-department')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-department')->text()
 			),
 			'version' => array(
-				'displayName' => wfMessage('bs-bookshelf-bookmetatag-version')->text()
+				'displayName' => wfMessage('bs-bookshelfui-bookmetatag-version')->text()
 			),
 		);
 
