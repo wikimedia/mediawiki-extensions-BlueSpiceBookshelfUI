@@ -139,8 +139,8 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 		var pageId = record.get('page_id');
 
 		this.progressMsg = Ext.Msg.wait(
-			mw.message('bs-bookshelfui-manager-deletingProgressText').plain(),
-			mw.message('bs-bookshelfui-manager-deletingProgressTitle').plain()
+			mw.message('bs-bookshelfui-manager-deletingprogress-text').plain(),
+			mw.message('bs-bookshelfui-manager-deletingprogress-title').plain()
 		);
 
 		var api = new mw.Api();
@@ -163,16 +163,19 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 		.done(function( response, xhr ){
 			if (response.success) {
 				mw.notify(
-					mw.msg( 'bs-bookshelfui-manager-deletionSuccessMsgText' ),
-					{ title: mw.msg( 'bs-bookshelfui-manager-deletionSuccessMsgWindowTitle' ) }
+					mw.msg( 'bs-bookshelfui-manager-deletionsuccess-text' ),
+					{ title: mw.msg( 'bs-bookshelfui-manager-deletionsuccess-title' ) }
 				);
 			}
 			else {
 				bs.util.alert(
 					'bs-bui-editor-delete-error',
 					{
-						titleMsg: 'bs-bookshelfui-manager-deletionFailureMsgWindowTitle',
-						text: mw.message( 'bs-bookshelfui-manager-deletionFailureMsgText', response.message ).parse()
+						titleMsg: 'bs-bookshelfui-manager-deletionfailure-title',
+						text: mw.message(
+							'bs-bookshelfui-manager-deletionfailure-text',
+							response.message
+						).parse()
 					}
 				);
 			}
@@ -186,7 +189,7 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 			id: this.getId()+'-btn-copy',
 			icon: mw.config.get( 'wgScriptPath') + '/extensions/BlueSpiceBookshelfUI/resources/images/bs-btn_bookclone.png',
 			iconCls: 'btn'+this.tbarHeight,
-			tooltip: mw.message('bs-extjs-tooltip-copy').plain(),
+			tooltip: mw.message('bs-bookshelfui-extjs-tooltip-copy').plain(),
 			height: 50,
 			width: 52,
 			disabled: true
@@ -196,7 +199,7 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 		this.colMainConf.actions.push({
 			iconCls: 'bs-extjs-actioncolumn-icon icon-copy contructive',
 			glyph: true,
-			tooltip: mw.message('bs-extjs-tooltip-copy').plain(),
+			tooltip: mw.message('bs-bookshelfui-extjs-tooltip-copy').plain(),
 			handler: this.onActionCopyClick,
 			scope: this
 		});
@@ -216,7 +219,7 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 		return [
 			{
 				dataIndex: 'book_displaytext',
-				header: mw.message('bs-bookshelfui-manager-titleTitle').plain(),
+				header: mw.message( 'bs-bookshelfui-manager-title' ).plain(),
 				sortable: true,
 				groupable: false,
 				filter: {
