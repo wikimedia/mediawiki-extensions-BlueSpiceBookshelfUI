@@ -82,7 +82,7 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 			[
 				'class' => 'bs-link-edit-bookshelfui-book',
 				'href' => $bookEditor->getFullURL(),
-				'title' => wfMessage( 'bs-link-edit-bookshelfui-book-title' )->plain()
+				'title' => wfMessage( 'bs-bookshelfui-book-title-link-edit' )->plain()
 			]
 		);
 
@@ -91,7 +91,7 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 			[
 				'class' => 'label'
 			],
-			wfMessage( 'bs-link-edit-bookshelfui-book-text' )->plain()
+			wfMessage( 'bs-bookshelfui-book-title-link-edit-text' )->plain()
 		);
 
 		$bookEditorLink .= \Html::closeElement( 'a' );

@@ -21,20 +21,20 @@ class ApiBookshelfManage extends BSApiTasksBase {
 		$oTitle = Title::newFromId( $aTaskData->book_page_id );
 		if( !($oTitle instanceof Title ) ) {
 			$oResult->message = $oResult->errors['pageid'] =
-				wfMessage( 'bs-bookshelf-bookmanager-deletion-error-pageid' )->text();
+				wfMessage( 'bs-bookshelfui-bookmanager-deletion-error-pageid' )->text();
 			return $oResult;
 		}
 
 		if( !$oTitle->userCan( 'delete' ) ) {
 			$oResult->message = $oResult->errors['permission'] =
-				wfMessage( 'bs-bookshelf-bookmanager-deletion-error-permission' )->text();
+				wfMessage( 'bs-bookshelfui-bookmanager-deletion-error-permission' )->text();
 			return $oResult;
 		}
 
 		$oArticle = new Article( $oTitle );
 		$error = '';
 		$oResult->success = $oArticle->doDeleteArticle(
-			wfMessage( 'bs-bookshelf-bookmanager-deletion-reason' )->text(),
+			wfMessage( 'bs-bookshelfui-bookmanager-deletion-reason' )->text(),
 			false,
 				0,
 				true,
@@ -43,7 +43,7 @@ class ApiBookshelfManage extends BSApiTasksBase {
 
 		if($oResult->success == false) {
 			$oResult->message =
-				wfMessage( 'bs-bookshelf-bookmanager-deletion-error-unkown' )->text();
+				wfMessage( 'bs-bookshelfui-bookmanager-deletion-error-unkown' )->text();
 			$oResult->errors['saving'] = $error;
 			$dbw = wfGetDB( DB_MASTER );
 			wfDebugLog(

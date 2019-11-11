@@ -51,7 +51,7 @@ Ext.define( 'BS.BookshelfUI.flyout.GeneralBooks', {
 
 	makeGridPanelColums: function() {
 		return [{
-			header: mw.message( 'bs-bookshelfui-manager-titleTitle' ).plain(),
+			header: mw.message( 'bs-bookshelfui-manager-title' ).plain(),
 			dataIndex: 'book_displaytext',
 			flex: 1,
 			filter: {
