@@ -156,7 +156,9 @@ Ext.define('BS.BookshelfUI.dialog.AddMass', {
 		var store = new BS.store.BSApi({
 			apiAction: 'bs-bookshelf-page-collection-store',
 			proxy: {
-				limit: 9999
+				extraParams: {
+					limit: 9999
+				}
 			},
 			model: 'PageCollection',
 			autoLoad: true
