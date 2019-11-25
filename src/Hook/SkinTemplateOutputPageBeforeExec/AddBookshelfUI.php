@@ -3,7 +3,6 @@
 namespace BlueSpice\BookshelfUI\Hook\SkinTemplateOutputPageBeforeExec;
 
 use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
-use BlueSpice\BookshelfUI\SidebarTreeNavigation;
 use BlueSpice\SkinData;
 use BlueSpice\BookshelfUI\Panel\BookNav;
 
@@ -14,7 +13,6 @@ class AddBookshelfUI extends SkinTemplateOutputPageBeforeExec {
 	}
 
 	protected function doProcess() {
-
 		$this->addSiteNavTab();
 		$this->addGlobalActions();
 
@@ -42,7 +40,7 @@ class AddBookshelfUI extends SkinTemplateOutputPageBeforeExec {
 			[
 				'bs-bookshelfui' => [
 					'position' => 30,
-					'callback' => function( $sktemplate ) {
+					'callback' => function ( $sktemplate ) {
 						return new BookNav( $sktemplate );
 					}
 				]

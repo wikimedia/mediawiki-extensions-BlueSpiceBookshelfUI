@@ -1,31 +1,52 @@
 <?php
 
-class ApiBookshelfManage extends BSApiTasksBase {
-	protected $aTasks = array(
-		'deleteBook'
-	);
+use BlueSpice\Api\Response\Standard;
 
+class ApiBookshelfManage extends BSApiTasksBase {
+
+	/**
+	 *
+	 * @var string[]
+	 */
+	protected $aTasks = [
+		'deleteBook'
+	];
+
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'deleteBook' => array( 'edit' )
-		);
+		return [
+			'deleteBook' => [ 'edit' ]
+		];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getDescription() {
 		return 'Allows management of books inside the wiki';
 	}
 
+	/**
+	 *
+	 * @param \stdClass $aTaskData
+	 * @param array $aParams
+	 * @return Standard
+	 */
 	public function task_deleteBook( $aTaskData, $aParams ) {
 		$oResult = $this->makeStandardReturn();
 
 		$oTitle = Title::newFromId( $aTaskData->book_page_id );
-		if( !($oTitle instanceof Title ) ) {
+		if ( !( $oTitle instanceof Title ) ) {
 			$oResult->message = $oResult->errors['pageid'] =
 				wfMessage( 'bs-bookshelfui-bookmanager-deletion-error-pageid' )->text();
 			return $oResult;
 		}
 
-		if( !$oTitle->userCan( 'delete' ) ) {
+		if ( !$oTitle->userCan( 'delete' ) ) {
 			$oResult->message = $oResult->errors['permission'] =
 				wfMessage( 'bs-bookshelfui-bookmanager-deletion-error-permission' )->text();
 			return $oResult;
@@ -41,14 +62,14 @@ class ApiBookshelfManage extends BSApiTasksBase {
 				$error
 		);
 
-		if($oResult->success == false) {
+		if ( $oResult->success == false ) {
 			$oResult->message =
 				wfMessage( 'bs-bookshelfui-bookmanager-deletion-error-unkown' )->text();
 			$oResult->errors['saving'] = $error;
 			$dbw = wfGetDB( DB_MASTER );
 			wfDebugLog(
 				'BS::Bookshelf',
-				'SpecialBookshelfBookManager::ajaxDeleteBook: '.$dbw->lastQuery()
+				'SpecialBookshelfBookManager::ajaxDeleteBook: ' . $dbw->lastQuery()
 			);
 		}
 

@@ -33,34 +33,34 @@ class BookshelfUI extends BsExtensionMW {
 
 	public static function ajaxGetAllBooksForComboBox() {
 		$oResult = new stdClass();
-		$oResult->books = array();
+		$oResult->books = [];
 
-		if( Title::makeTitle( NS_BOOK, 'X')->userCan( 'read') === false ) {
-			return FormatJson::encode($oResult);
+		if ( Title::makeTitle( NS_BOOK, 'X' )->userCan( 'read' ) === false ) {
+			return FormatJson::encode( $oResult );
 		}
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
 			'page',
-			array( 'page_id', 'page_title' ),
-			array( 'page_namespace' => NS_BOOK ),
+			[ 'page_id', 'page_title' ],
+			[ 'page_namespace' => NS_BOOK ],
 			__METHOD__,
-			array( 'ORDER BY' => 'page_title' )
+			[ 'ORDER BY' => 'page_title' ]
 		);
 
 		foreach ( $res as $row ) {
 			$oTitle = Title::newFromID( $row->page_id );
-			$oPHP = PageHierarchyProvider::getInstanceFor($oTitle->getPrefixedText());
+			$oPHP = PageHierarchyProvider::getInstanceFor( $oTitle->getPrefixedText() );
 			$aTOC = $oPHP->getExtendedTOCArray();
 
-			if( !isset( $aTOC[0] ) ) {
+			if ( !isset( $aTOC[0] ) ) {
 				continue;
 			}
 
 			$aFirstTitle = $aTOC[0];
-			$oFirstTitle = Title::newFromText($aFirstTitle['title']);
+			$oFirstTitle = Title::newFromText( $aFirstTitle['title'] );
 
-			if( $oFirstTitle->userCan( 'read' ) === false ) {
+			if ( $oFirstTitle->userCan( 'read' ) === false ) {
 				continue;
 			}
 
@@ -71,14 +71,14 @@ class BookshelfUI extends BsExtensionMW {
 
 			$oResult->books[] = $oBook;
 		}
-		return FormatJson::encode($oResult);
+		return FormatJson::encode( $oResult );
 	}
 
 	/**
 	 * Hook handler for UnitTestList
 	 *
-	 * @param array $paths
-	 * @return boolean
+	 * @param array &$paths
+	 * @return bool
 	 */
 	public static function onUnitTestsList( &$paths ) {
 		$paths[] = __DIR__ . '/tests/phpunit/';

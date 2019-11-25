@@ -22,6 +22,9 @@ class ApiBookshelfManageTest extends BSApiTasksTestBase {
 		$this->insertPage( 'Book:Dummy', '<bookmeta title="Dummy book"/>' );
 	}
 
+	/**
+	 * @covers \ApiBookshelfManage::task_deleteBook
+	 */
 	public function testDeleteBook() {
 		$oTitle = Title::newFromText( "Dummy", NS_BOOK );
 
@@ -35,5 +38,4 @@ class ApiBookshelfManageTest extends BSApiTasksTestBase {
 		$this->assertTrue( $oResponse->success, 'DeleteBook task failed' );
 	}
 
-	
 }

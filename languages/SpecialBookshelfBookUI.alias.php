@@ -1,14 +1,14 @@
 <?php
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'BookshelfBookUI' => array( 'BookshelfBookUI','Book Editor' ),
-	'BookshelfBookManager' => array( 'BookshelfBookManager', 'BookManager', 'BookManager' ),
-);
+$specialPageAliases['en'] = [
+	'BookshelfBookUI' => [ 'BookshelfBookUI','Book Editor' ],
+	'BookshelfBookManager' => [ 'BookshelfBookManager', 'BookManager', 'BookManager' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'BookshelfBookUI' => array( 'Bucheditor' ),
-	'BookshelfBookManager' => array( 'Bücherverwaltung' ),
-);
+$specialPageAliases['de'] = [
+	'BookshelfBookUI' => [ 'Bucheditor' ],
+	'BookshelfBookManager' => [ 'Bücherverwaltung' ],
+];

@@ -2,11 +2,19 @@
 
 namespace BlueSpice\BookshelfUI;
 
+use SkinTemplate;
+
 class SidebarBooklist {
 
 	protected $buffer = [];
 
-	public function __construct( $template, \DOMElement $domElement = null, $indent = 0) {
+	/**
+	 *
+	 * @param SkinTemplate $template
+	 * @param \DOMElement|null $domElement
+	 * @param int $indent
+	 */
+	public function __construct( $template, \DOMElement $domElement = null, $indent = 0 ) {
 		$this->skinTemplate = $template;
 	}
 
@@ -18,6 +26,10 @@ class SidebarBooklist {
 		return $this->skinTemplate;
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getHtml() {
 		$this->fetchAllBooks();
 
@@ -25,7 +37,7 @@ class SidebarBooklist {
 		$cache->getWithSetCallback(
 			$cache->makeKey( __CLASS__, 'fetchBookHierarchies' ),
 			3600,
-			function() {
+			function () {
 				$this->fetchBookHierarchies();
 			}
 		);
@@ -54,25 +66,25 @@ class SidebarBooklist {
 	protected $bookTitles = [];
 
 	protected function fetchAllBooks() {
-		//TODO: Use API or better DataStore in BS3
-		$dbr = wfGetDB( DB_SLAVE );
-		$res = $dbr->select( 'page', '*', ['page_namespace' => NS_BOOK ] );
+		// TODO: Use API or better DataStore in BS3
+		$dbr = wfGetDB( DB_REPLICA );
+		$res = $dbr->select( 'page', '*', [ 'page_namespace' => NS_BOOK ] );
 		$this->bookTitles = \TitleArray::newFromResult( $res );
 	}
 
 	protected function renderList() {
-		foreach( $this->hierarchies as $bookTitle => $hierarchy ) {
+		foreach ( $this->hierarchies as $bookTitle => $hierarchy ) {
 			$extendedTOC = $hierarchy->getExtendedTOCArray();
 			$firstChapterTitle = $this->getFirstChapterTitle( $extendedTOC );
 			$bookMeta = $hierarchy->getBookMeta();
 
 			$bookTitleText = \Title::newFromText( $bookTitle )->getText();
-			if( isset( $bookMeta['title'] ) ) {
+			if ( isset( $bookMeta['title'] ) ) {
 				$bookTitleText = $bookMeta['title'];
 			}
 
 			$attribs = [];
-			if( $this->currentBook === $bookTitle ) {
+			if ( $this->currentBook === $bookTitle ) {
 				$attribs[ 'class' ] = 'active';
 			}
 
@@ -100,7 +112,7 @@ class SidebarBooklist {
 			[
 				'class' => 'bs-bookshelfui-book-list-body bs-nav-links'
 			],
-			'<ul>'.$list.'</ul>'
+			'<ul>' . $list . '</ul>'
 		);
 		$this->buffer[] = '</div>';
 	}
@@ -117,29 +129,35 @@ class SidebarBooklist {
 		$currentPageTitleText = $this->getSkinTemplate()->getSkin()->getTitle()
 			->getPrefixedText();
 
-		foreach( $this->bookTitles as $title ) {
+		foreach ( $this->bookTitles as $title ) {
 			try {
 				$pageHierarchieProvider = \PageHierarchyProvider::getInstanceFor(
 					$title->getPrefixedText()
 				);
 				$this->hierarchies[$title->getPrefixedText()] = $pageHierarchieProvider;
 
-				if( empty( $this->currentBook ) ) {
+				if ( empty( $this->currentBook ) ) {
 					$currentNumber = $pageHierarchieProvider->getNumberFor(
 						$currentPageTitleText, true
 					);
 
-					if( !empty( $currentNumber ) ){
+					if ( !empty( $currentNumber ) ) {
 						$this->currentBook = $title->getPrefixedText();
 					}
 				}
-			} catch( \Exception $ex ) { }
+			} catch ( \Exception $ex ) {
+			}
 		}
 	}
 
+	/**
+	 *
+	 * @param array $extendedTOC
+	 * @return \Title|null
+	 */
 	protected function getFirstChapterTitle( $extendedTOC ) {
-		foreach( $extendedTOC as $entry ) {
-			if( $entry['bookshelf']['type'] === 'wikipage' ) {
+		foreach ( $extendedTOC as $entry ) {
+			if ( $entry['bookshelf']['type'] === 'wikipage' ) {
 				$nsId = $entry['bookshelf']['page_namespace'];
 				$titleText = $entry['bookshelf']['page_title'];
 				$title = \Title::makeTitle( $nsId, $titleText );
@@ -147,6 +165,7 @@ class SidebarBooklist {
 				return $title;
 			}
 		}
+		return null;
 	}
 
 }

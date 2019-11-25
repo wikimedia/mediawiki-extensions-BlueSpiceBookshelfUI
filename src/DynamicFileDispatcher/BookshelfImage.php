@@ -17,18 +17,23 @@ class BookshelfImage extends ArticlePreviewImage {
 	 */
 	protected $pageHierarchyProvider = null;
 
+	/**
+	 *
+	 * @return StaticCoverImage|ImageExternal
+	 */
 	public function getFile() {
-
 		$title = \Title::newFromText( $this->params[static::TITLETEXT] );
-		$this->pageHierarchyProvider = \PageHierarchyProvider::getInstanceFor( $title->getPrefixedText() );
+		$this->pageHierarchyProvider = \PageHierarchyProvider::getInstanceFor(
+			$title->getPrefixedText()
+		);
 		$meta = $this->pageHierarchyProvider->getBookMeta();
 
 		$coverpage = '';
-		if( isset( $meta['bookshelfimage'] ) ) {
+		if ( isset( $meta['bookshelfimage'] ) ) {
 			$coverpage = $meta['bookshelfimage'];
 		}
 
-		if( empty( $coverpage ) ) {
+		if ( empty( $coverpage ) ) {
 			return new ImageExternal(
 				$this,
 				$this->buildFallbackURL(),
@@ -37,7 +42,7 @@ class BookshelfImage extends ArticlePreviewImage {
 		}
 
 		$parsedUrl = wfParseUrl( $coverpage );
-		if( $parsedUrl !== false ) {
+		if ( $parsedUrl !== false ) {
 			return new ImageExternal(
 				$this,
 				$coverpage,
@@ -46,8 +51,8 @@ class BookshelfImage extends ArticlePreviewImage {
 		}
 
 		$file = \RepoGroup::singleton()->findFile( $coverpage );
-		if( $file instanceof \File ) {
-			//TODO: Add "transformable" RepoFile to BSF
+		if ( $file instanceof \File ) {
+			// TODO: Add "transformable" RepoFile to BSF
 			return new ImageExternal(
 				$this,
 				$file->createThumb(
@@ -61,8 +66,13 @@ class BookshelfImage extends ArticlePreviewImage {
 		return new StaticCoverImage( $this );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function buildFallbackURL() {
-		$dfdUrlBuilder = \BlueSpice\Services::getInstance()->getBSDynamicFileDispatcherUrlBuilder();
+		$dfdUrlBuilder = \BlueSpice\Services::getInstance()
+			->getBSDynamicFileDispatcherUrlBuilder();
 
 		$extendedToc = $this->pageHierarchyProvider->getExtendedTOCArray();
 		$firstPage = $extendedToc[0];
