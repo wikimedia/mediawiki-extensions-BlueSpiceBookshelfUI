@@ -19,8 +19,8 @@ class PageProvider {
 	 *
 	 * @return BlueSpice\BookshelfUI\MassAdd\PageProvider
 	 */
-	public static function getInstance(){
-		if( self::$instance === null ) {
+	public static function getInstance() {
+		if ( self::$instance === null ) {
 			self::$instance = self::createInstance();
 		}
 		return self::$instance;
@@ -30,7 +30,8 @@ class PageProvider {
 		return new self();
 	}
 
-	protected function __construct () {}
+	protected function __construct() {
+ }
 
 	/**
 	 * Sets the type of collection to retrieve
@@ -56,9 +57,11 @@ class PageProvider {
 	 */
 	public function getData() {
 		$pages = [];
-		$registy = \ExtensionRegistry::getInstance()->getAttribute( 'BlueSpiceBookshelfUIMassAddHandlerRegistry' );
-		foreach( $registy as $handlerType => $factoryCallback ) {
-			if( $handlerType !== $this->type ) {
+		$registy = \ExtensionRegistry::getInstance()->getAttribute(
+			'BlueSpiceBookshelfUIMassAddHandlerRegistry'
+		);
+		foreach ( $registy as $handlerType => $factoryCallback ) {
+			if ( $handlerType !== $this->type ) {
 				continue;
 			}
 
@@ -82,16 +85,21 @@ class PageProvider {
 		return $this->requiredKeys;
 	}
 
-	protected function verify ( &$pages ) {
-		if( is_array( $pages ) == false ) {
+	/**
+	 *
+	 * @param array &$pages
+	 * @return array|null
+	 */
+	protected function verify( &$pages ) {
+		if ( is_array( $pages ) == false ) {
 			return [];
 		}
 		$finalPages = [];
-		foreach( $pages as $page ) {
-			if( is_array( $page ) == false ) {
+		foreach ( $pages as $page ) {
+			if ( is_array( $page ) == false ) {
 				continue;
 			}
-			if( $this->verifyKeyIntegrity( $page ) === false ) {
+			if ( $this->verifyKeyIntegrity( $page ) === false ) {
 				continue;
 			}
 			$finalPages[] = $page;
@@ -99,13 +107,17 @@ class PageProvider {
 		$pages = $finalPages;
 	}
 
-	protected function verifyKeyIntegrity ( $page ) {
-		foreach( $this->requiredKeys as $key ) {
-			if( array_key_exists( $key, $page ) == false ) {
+	/**
+	 *
+	 * @param array $page
+	 * @return bool
+	 */
+	protected function verifyKeyIntegrity( $page ) {
+		foreach ( $this->requiredKeys as $key ) {
+			if ( array_key_exists( $key, $page ) == false ) {
 				return false;
 			}
 		}
 		return true;
 	}
 }
-

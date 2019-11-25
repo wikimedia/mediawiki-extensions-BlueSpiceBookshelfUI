@@ -2,17 +2,32 @@
 
 namespace BlueSpice\BookshelfUI;
 
+use SkinTemplate;
 use PageHierarchyProvider;
 use BSTreeNode;
 
 class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 
+	/**
+	 *
+	 * @var SkinTemplate
+	 */
 	protected $skinTemplate = null;
 
-	public function __construct( $template, \DOMElement $domElement = null, $indent = 0) {
+	/**
+	 *
+	 * @param SkinTemplate $template
+	 * @param \DOMElement|null $domElement
+	 * @param int $indent
+	 */
+	public function __construct( $template, \DOMElement $domElement = null, $indent = 0 ) {
 		$this->skinTemplate = $template;
 	}
 
+	/**
+	 *
+	 * @return SkinTemplate
+	 */
 	public function getSkinTemplate() {
 		return $this->skinTemplate;
 	}
@@ -29,10 +44,18 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 	 */
 	protected $rootNodeId = '';
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getContainerID() {
 		return 'bs-bookshelfui-book-toc';
 	}
 
+	/**
+	 *
+	 * @return BSTreeNode
+	 */
 	protected function makeTreeRootNode() {
 		$tree = $this->phProvider->getExtendedTOCJSON();
 
@@ -47,6 +70,10 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 		return $rootNode;
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getPathsToExpand() {
 		$number = $this->phProvider->getNumberFor(
 			$this->skinTemplate->getSkin()->getTitle()->getPrefixedText()
@@ -57,12 +84,16 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 		return [ $path ];
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getHtml() {
 		try {
 			$this->phProvider = PageHierarchyProvider::getInstanceForArticle(
 				$this->skinTemplate->getSkin()->getTitle()->getPrefixedText()
 			);
-		} catch ( \Exception $ex) {
+		} catch ( \Exception $ex ) {
 			return '';
 		}
 
@@ -71,7 +102,7 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 		$tree = $this->phProvider->getExtendedTOCJSON();
 		$bookTitle = $tree->bookshelf->page_title;
 		$bookMeta = $this->phProvider->getBookMeta();
-		if( isset( $bookMeta['title'] ) ) {
+		if ( isset( $bookMeta['title'] ) ) {
 			$bookTitle = $bookMeta['title'];
 		}
 
@@ -82,7 +113,7 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 
 		$bookEditor = \Title::makeTitle(
 			NS_SPECIAL,
-			'BookshelfBookUI/' .$bookEditorTitle->getPrefixedDBkey()
+			'BookshelfBookUI/' . $bookEditorTitle->getPrefixedDBkey()
 		);
 
 		$bookEditorLink = \Html::openElement(
@@ -110,16 +141,20 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 			$bookTitle
 		);
 
-		return '<div class="bs-bookshelfui-book">' . $headingHtml . '</div>' . $treeHtml . $bookEditorLink;
+		return '<div class="bs-bookshelfui-book">'
+			. $headingHtml
+			. '</div>'
+			. $treeHtml
+			. $bookEditorLink;
 	}
 
 	/**
 	 *
-	 * @param \BSTreeNode $node
-	 * @param strClass $childs
+	 * @param BSTreeNode $node
+	 * @param array $childs
 	 */
 	protected function addChildsToNode( $node, $childs ) {
-		foreach( $childs as $child ) {
+		foreach ( $childs as $child ) {
 			$childNode = new BSTreeNode( $child->id, $node, new \HashConfig( [
 				BSTreeNode::CONFIG_EXPANDED => false,
 				BSTreeNode::CONFIG_IS_LEAF => false,
@@ -128,24 +163,34 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 
 			$node->appendChild( $childNode );
 
-			if( isset( $child->children ) && !empty( $child->children ) ) {
+			if ( isset( $child->children ) && !empty( $child->children ) ) {
 				$this->addChildsToNode( $childNode,  $child->children );
 			}
 		}
 	}
 
+	/**
+	 *
+	 * @param BSTreeNode $node
+	 * @return string
+	 */
 	protected function makeNodeText( $node ) {
-		if( $node->articleType  === 'plain-text' ) {
+		if ( $node->articleType === 'plain-text' ) {
 			return $this->makePlainTextNodeText( $node );
 		}
-		if( $node->articleType  === 'wikilink-with-alias' ) {
+		if ( $node->articleType === 'wikilink-with-alias' ) {
 			return $this->makeWikiPageNodeText( $node );
 		}
-		if( $node->articleType  === 'wikilink' ) {
+		if ( $node->articleType === 'wikilink' ) {
 			return $this->makeWikiPageNodeText( $node );
 		}
 	}
 
+	/**
+	 *
+	 * @param BSTreeNode $node
+	 * @return string
+	 */
 	protected function makePlainTextNodeText( $node ) {
 		return \Html::element(
 			'a',
@@ -158,33 +203,46 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 		);
 	}
 
+	/**
+	 *
+	 * @param BSTreeNode $node
+	 * @return string
+	 */
 	protected function makeWikiPageNodeText( $node ) {
 		$currentTitle = $this->getSkinTemplate()->getSkin();
 		$target = \Title::newFromText( $node->articleTitle );
 
 		$num = '<span class="bs-articleNumber">' . $node->articleNumber . '.</span>';
-		$title = '<span class="bs-articleText">' . str_replace( $node->articleNumber . '. ', '', $node->text ) . '</span>';
+		$title = '<span class="bs-articleText">'
+			. str_replace( $node->articleNumber
+			. '. ', '', $node->text )
+		. '</span>';
 
 		$attribs = [
 			'name' => $node->articleNumber,
 			'title' => $node->text
 		];
 
-		if( $currentTitle->getTitle()->equals( $target ) ) {
+		if ( $currentTitle->getTitle()->equals( $target ) ) {
 			$attribs['class'] = 'active';
 		}
 
 		return \Linker::link( $target, $num . $title, $attribs );
 	}
 
+	/**
+	 *
+	 * @param string $number
+	 * @return string
+	 */
 	protected function makeExpandPath( $number ) {
 		$numberParts = explode( '.', $number );
 		$path = [ \Sanitizer::escapeId( $number ) ];
 		$count = count( $numberParts );
-		for( $i = 0; $i <= $count; $i++ ) {
+		for ( $i = 0; $i <= $count; $i++ ) {
 			array_pop( $numberParts );
 			$id = implode( '.', $numberParts );
-			if( empty( $id ) ) {
+			if ( empty( $id ) ) {
 				continue;
 			}
 			$path[] = \Sanitizer::escapeId( $id );

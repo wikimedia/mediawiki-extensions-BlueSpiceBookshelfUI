@@ -10,20 +10,24 @@ class Category implements \BlueSpice\BookshelfUI\MassAdd\IHandler {
 	 */
 	protected $root;
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getData() {
 		$categoryPage = \Category::newFromName( $this->root );
 		$titles = $categoryPage->getMembers();
 
 		$categoryRes = [];
 		$titles->rewind();
-		while( $titles->key() < $titles->count() ){
+		while ( $titles->key() < $titles->count() ) {
 			$title = $titles->current();
-			$categoryRes[] = array(
+			$categoryRes[] = [
 				'page_id' => $title->getArticleId(),
 				'page_title' => $title->getText(),
 				'page_namespace' => $title->getNamespace(),
 				'prefixed_text' => $title->getPrefixedText()
-			);
+			];
 			$titles->next();
 		}
 
@@ -40,9 +44,12 @@ class Category implements \BlueSpice\BookshelfUI\MassAdd\IHandler {
 		return new self( $root );
 	}
 
+	/**
+	 *
+	 * @param string $root
+	 */
 	protected function __construct( $root ) {
 		$this->root = $root;
 	}
 
 }
-
