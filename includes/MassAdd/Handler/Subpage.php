@@ -10,26 +10,30 @@ class Subpage implements \BlueSpice\BookshelfUI\MassAdd\IHandler {
 	 */
 	protected $root;
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getData() {
-		if( substr( $this->root, -1 ) == '/' ) {
+		if ( substr( $this->root, -1 ) == '/' ) {
 			$this->root = substr( $this->root, 0, -1 );
 		}
 
 		$title = \Title::newFromText( $this->root );
 
-		if( !( $title instanceof \Title ) || $title->exists() == false ) {
+		if ( !( $title instanceof \Title ) || $title->exists() == false ) {
 			return [];
 		}
 
 		$subpages = $title->getSubpages();
 		$subpageRes = [];
-		foreach( $subpages as $subpage ) {
-			$subpageRes[] = array(
+		foreach ( $subpages as $subpage ) {
+			$subpageRes[] = [
 				'page_id' => $subpage->getArticleId(),
 				'page_title' => $subpage->getText(),
 				'page_namespace' => $subpage->getNamespace(),
 				'prefixed_text' => $subpage->getPrefixedText()
-			);
+			];
 		}
 		return $subpageRes;
 	}
@@ -44,9 +48,12 @@ class Subpage implements \BlueSpice\BookshelfUI\MassAdd\IHandler {
 		return new self( $root );
 	}
 
+	/**
+	 *
+	 * @param string $root
+	 */
 	protected function __construct( $root ) {
 		$this->root = $root;
 	}
 
 }
-

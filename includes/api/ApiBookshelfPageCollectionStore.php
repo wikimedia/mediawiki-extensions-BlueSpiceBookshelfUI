@@ -2,6 +2,11 @@
 
 class ApiBookshelfPageCollectionStore extends BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return array
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$aPages = [];
 		$dbr = $this->getDB();
@@ -11,11 +16,11 @@ class ApiBookshelfPageCollectionStore extends BSApiExtJSStoreBase {
 
 		$res = $dbr->select(
 			'page',
-			array( 'page_title' ),
-			array(
+			[ 'page_title' ],
+			[
 				"page_namespace" => NS_MEDIAWIKI,
 				"page_title" . $dbr->buildLike( $pageCollectionPrefix . $sQuery, $dbr->anyString() )
-			)
+			]
 		);
 
 		foreach ( $res as $row ) {

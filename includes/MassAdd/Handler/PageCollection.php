@@ -10,12 +10,16 @@ class PageCollection implements \BlueSpice\BookshelfUI\MassAdd\IHandler {
 	 */
 	protected $root;
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getData() {
 		$pageCollectionPrefix = wfMessage( 'bs-pagecollection-prefix' )->plain();
 		$pageCollectionPrefix .= "/";
 		$pageCollectionTitle = \Title::makeTitle( NS_MEDIAWIKI, $pageCollectionPrefix . $this->root );
 
-		if( $pageCollectionTitle->exists() === false ) {
+		if ( $pageCollectionTitle->exists() === false ) {
 			return [];
 		}
 
@@ -23,38 +27,38 @@ class PageCollection implements \BlueSpice\BookshelfUI\MassAdd\IHandler {
 		$pageCollectionContent = $pageCollectionWikiPage->getContent();
 		$pageCollectionText = \ContentHandler::getContentText( $pageCollectionContent );
 
-		if( trim( $pageCollectionText ) == '' ) {
+		if ( trim( $pageCollectionText ) == '' ) {
 			return [];
 		}
 
-		$pageRes = array();
+		$pageRes = [];
 		$pages = explode( "\n", $pageCollectionText );
-		foreach( $pages as $page ) {
+		foreach ( $pages as $page ) {
 			$page = trim( trim( $page, '*' ) );
 
 			$pageDisplayText = '';
-			//Parse internal links
-			if( strpos( $page, '[[' ) !== false ) {
+			// Parse internal links
+			if ( strpos( $page, '[[' ) !== false ) {
 				$page = substr( $page, 2, -2 );
 				$linkPieces = explode( '|', $page );
-				if( count( $linkPieces ) == 2 ) {
+				if ( count( $linkPieces ) == 2 ) {
 					$page = $linkPieces[0];
 					$pageDisplayText = $linkPieces[1];
 				}
 			}
 			$title = \Title::newFromText( $page );
-			if( !( $title instanceof \Title ) ) {
+			if ( !( $title instanceof \Title ) ) {
 				continue;
 			}
-			if( !$pageDisplayText ) {
+			if ( !$pageDisplayText ) {
 				$pageDisplayText = $title->getPrefixedText();
 			}
-			$pageRes[] = array(
+			$pageRes[] = [
 				'page_id' => $title->getArticleId(),
 				'page_title' => $title->getText(),
 				'page_namespace' => $title->getNamespace(),
 				'prefixed_text' => $pageDisplayText
-			);
+			];
 		}
 
 		return $pageRes;
@@ -70,9 +74,12 @@ class PageCollection implements \BlueSpice\BookshelfUI\MassAdd\IHandler {
 		return new self( $root );
 	}
 
+	/**
+	 *
+	 * @param string $root
+	 */
 	protected function __construct( $root ) {
 		$this->root = $root;
 	}
 
 }
-

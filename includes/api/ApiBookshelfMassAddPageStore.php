@@ -2,6 +2,11 @@
 
 class ApiBookshelfMassAddPageStore extends BSApiExtJSStoreBase {
 
+	/**
+	 *
+	 * @param string $sQuery
+	 * @return array
+	 */
 	protected function makeData( $sQuery = '' ) {
 		$params = $this->extractRequestParams();
 
@@ -17,35 +22,43 @@ class ApiBookshelfMassAddPageStore extends BSApiExtJSStoreBase {
 		return $pages;
 	}
 
-	public function getAllowedParams () {
+	/**
+	 *
+	 * @return array
+	 */
+	public function getAllowedParams() {
 		return array_merge(
 			parent::getAllowedParams(),
-			array(
-				'root' => array(
+			[
+				'root' => [
 					ApiBase::PARAM_TYPE => 'string',
 					ApiBase::PARAM_REQUIRED => true
-				),
-				'type' => array(
+				],
+				'type' => [
 					ApiBase::PARAM_TYPE => 'string',
 					ApiBase::PARAM_REQUIRED => true
-				),
-				'limit' => array(
+				],
+				'limit' => [
 					ApiBase::PARAM_TYPE => 'integer',
 					ApiBase::PARAM_REQUIRED => false,
 					ApiBase::PARAM_DFLT => 9999
-				)
-			)
+				]
+			]
 		);
 	}
 
-	public function getParamDescription () {
+	/**
+	 *
+	 * @return array
+	 */
+	public function getParamDescription() {
 		return array_merge(
-			parent::getParamDescription (),
-			array(
+			parent::getParamDescription(),
+			[
 				'root' => 'Root value based on which to return pages',
 				'type' => 'Type of source for mass add',
 				'limit' => 'Number of results to return'
-			)
+			]
 		);
 	}
 }
