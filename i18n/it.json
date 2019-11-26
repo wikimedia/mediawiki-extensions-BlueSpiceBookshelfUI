@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"bs-bookshelfui-widget-editor-link-text": "Modifica questo libro",
+	"bs-bookshelfui-manager-title": "Titolo",
+	"bs-bookshelfui-type-subpages": "Tutte le sottopagine di una pagina",
+	"bs-bookshelfui-flyout-title": "Elenco di libri",
+	"bs-bookshelfui-bookmetatag-subtitle": "Sottotitolo",
+	"right-bookshelfbookmanager-viewspecialpage": "Accede alla pagina speciale [[Special:BookshelfBookManager]]"
+}
