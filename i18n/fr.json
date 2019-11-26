@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eihel"
+		]
+	},
+	"bs-bookshelfui-widget-editor-link-text": "Modifier ce livre",
+	"bs-bookshelfui-new-book-text": "Titre de livre",
+	"bs-bookshelfui-delete-book-title": "Supprimer le livre",
+	"bs-bookshelfui-manager-title": "Tire",
+	"bs-bookshelfui-manager-deletingprogress-title": "Suppression…",
+	"bs-bookshelfui-manager-deletionsuccess-title": "Supprimé avec succès !",
+	"bs-bookshelfui-manager-deletionsuccess-text": "Le livre a été supprimé avec succès.",
+	"bs-bookshelfui-manager-deletionfailure-title": "Erreur lors de la suppression !",
+	"bs-bookshelfui-manager-deletionfailure-text": "L'erreur suivante s'est produite lors de la tentative de suppression du livre : $1",
+	"bs-bookshelfui-ctxmnu-tag-edit": "Modifier les paramètres",
+	"bs-bookshelfui-confirm-delete-title": "Supprimer le chapitre",
+	"bs-bookshelfui-grouping-template-type-ns_book": "Livre généraux",
+	"bs-bookshelfui-dlg-choosecategory-label": "Catégorie",
+	"bs-bookshelfui-type-subpages": "Toutes les sous-pages d'une page",
+	"bs-bookshelfui-flyout-title": "Liste de livres",
+	"bs-bookshelfui-book-title-link-edit": "Modifier le livre",
+	"bs-bookshelfui-book-title-link-edit-text": "Modifier le livre",
+	"bs-bookshelfui-export-book-text": "Veuillez patienter pendant la création du livre.",
+	"bs-bookshelfui-bookmanager-deletion-reason": "Supprimé par BookManager",
+	"bs-bookshelfui-bookmanager-deletion-error-pageid": "L'article fourni n'a pas pu être trouvé.",
+	"bs-bookshelfui-bookmetatag-subtitle": "Sous-titre"
+}
