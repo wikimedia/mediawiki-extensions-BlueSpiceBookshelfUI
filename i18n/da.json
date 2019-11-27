@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-bookshelfui-new-book-title": "Opret en ny bog",
+	"bs-bookshelfui-delete-book-title": "Slet bog",
+	"bs-bookshelfui-bookui-savingprogress-title": "Gemmer bog",
+	"bs-bookshelfui-manager-title": "Titel",
+	"bs-bookshelfui-manager-deletingprogress-title": "Sletter...",
+	"bs-bookshelfui-confirm-delete-title": "Fjern kapitel",
+	"bs-bookshelfui-nothingtoexport-text": "Dit valg er tomt",
+	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|En bog|$1 bøger}})",
+	"bs-bookshelfui-grouping-template-type-user_book": "Egne bøger",
+	"bs-bookshelfui-book-type": "Bogens type",
+	"bs-bookshelfui-dlg-choosecategory-label": "Kategori",
+	"bs-bookshelfui-dlg-type-label": "Kilde",
+	"bs-bookshelfui-type-subpages": "Alle undersider af en side",
+	"bs-bookshelfui-book-title-link-edit": "Rediger bog",
+	"bs-bookshelfui-book-title-link-edit-text": "Rediger bog",
+	"bs-bookshelfui-bookmetatag-title": "Titel",
+	"bs-bookshelfui-bookmetatag-author1": "Forfatter 1",
+	"bs-bookshelfui-bookmetatag-author2": "Forfatter 2",
+	"bs-bookshelfui-bookmetatag-docummenttype": "Dokument type",
+	"bs-bookshelfui-bookmetatag-department": "Afdeling"
+}

@@ -1,11 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Tizven"
 		]
 	},
 	"bs-bookshelfui-widget-editor-link-text": "Modifica questo libro",
+	"bs-bookshelfui-edit-source": "Modifica il sorgente della pagina wiki",
+	"bs-bookshelfui-open-source": "Mostra il sorgente della pagina wiki",
+	"bs-bookshelfui-bookui-savingprogress-title": "Salvataggio libro in corso",
+	"bs-bookshelfui-bookui-savingprogress-text": "Per favore, attendere fino a quando il libro non è salvato sul server",
 	"bs-bookshelfui-manager-title": "Titolo",
+	"bs-bookshelfui-manager-deletingprogress-text": "Eliminazione in corso  del libro selezionato",
+	"bs-bookshelfui-manager-deletingprogress-title": "Eliminazione in corso...",
+	"bs-bookshelfui-manager-deletionsuccess-title": "Eliminazione avvenuta con successo!",
+	"bs-bookshelfui-manager-deletionsuccess-text": "Il libro è stato eliminato con successo.",
+	"bs-bookshelfui-manager-deletionfailure-title": "Errore durante l'eliminazione",
+	"bs-bookshelfui-manager-deletionfailure-text": "Si è verificato il seguente errore mentre veniva cancellato il libro: $1",
+	"bs-bookshelfui-ctxmnu-delete": "Elimina dal libro",
+	"bs-bookshelfui-confirm-delete-title": "Rimuovere il capitolo",
 	"bs-bookshelfui-type-subpages": "Tutte le sottopagine di una pagina",
 	"bs-bookshelfui-flyout-title": "Elenco di libri",
 	"bs-bookshelfui-bookmetatag-subtitle": "Sottotitolo",

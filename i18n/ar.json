@@ -13,7 +13,7 @@
 	"bs-bookshelfui-new-book-title": "إنشاء كتاب جديد",
 	"bs-bookshelfui-new-book-text": "عنوان الكتاب",
 	"bs-bookshelfui-delete-book-title": "حذف الكتاب",
-	"bs-bookshelfui-delete-book-text": "هل تريد حقا حذف هذا الكتاب؟  <em>لان<em/> تم إزالة وسوم \"رف الكتب\" تلقائيا من صفحات الويكي المرتبطة!",
+	"bs-bookshelfui-delete-book-text": "هل تريد حقا حذف هذا الكتاب؟ <em>لن<em/> تتم إزالة وسوم \"رف الكتب\" تلقائيا من صفحات الويكي المرتبطة!",
 	"bs-bookshelfui-export-selection": "تصدير الاختيار",
 	"bs-bookshelfui-save-and-modify": "احفظ وأضف التنقل بين الكتب إلى كل صفحة ويكي",
 	"bs-bookshelfui-edit-source": "تحرير مصدر صفحة الويكي",
