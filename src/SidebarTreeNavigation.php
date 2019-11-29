@@ -75,7 +75,15 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 			$bookTitle = $bookMeta['title'];
 		}
 
-		$bookEditor = \Title::makeTitle( NS_SPECIAL, 'BookshelfBookUI/Book:' . $tree->bookshelf->page_title );
+		$bookEditorTitle = \Title::makeTitleSafe(
+			$tree->bookshelf->page_namespace,
+			$tree->bookshelf->page_title
+		);
+
+		$bookEditor = \Title::makeTitle(
+			NS_SPECIAL,
+			'BookshelfBookUI/' .$bookEditorTitle->getPrefixedDBkey()
+		);
 
 		$bookEditorLink = \Html::openElement(
 			'a',
