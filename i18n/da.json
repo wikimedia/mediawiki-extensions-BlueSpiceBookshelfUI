@@ -9,6 +9,7 @@
 	"bs-bookshelfui-bookui-savingprogress-title": "Gemmer bog",
 	"bs-bookshelfui-manager-title": "Titel",
 	"bs-bookshelfui-manager-deletingprogress-title": "Sletter...",
+	"bs-bookshelfui-ctxmnu-delete": "Slet fra bog",
 	"bs-bookshelfui-confirm-delete-title": "Fjern kapitel",
 	"bs-bookshelfui-nothingtoexport-text": "Dit valg er tomt",
 	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|En bog|$1 bøger}})",

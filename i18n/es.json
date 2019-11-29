@@ -9,6 +9,8 @@
 	"bookshelfbookmanager": "Gestor de libros",
 	"bs-bookshelfui-editor-no-title-provided": "No se proporcionó ningún título válido para el libro",
 	"bs-bookshelfui-widget-editor-link-text": "Editar este libro",
+	"bs-bookshelfui-new-book-text": "Título del libro",
+	"bs-bookshelfui-delete-book-title": "Eliminar libro",
 	"bs-bookshelfui-export-selection": "Exportar selección",
 	"bs-bookshelfui-bookui-savingprogress-text": "Aguarda mientras el libro se almacena en el servidor",
 	"bs-bookshelfui-manager-title": "Título",
