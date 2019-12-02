@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"沈澄心"
+		]
+	},
+	"bs-bookshelfui-manager-title": "标题",
+	"bs-bookshelfui-dlg-choosecategory-label": "分类",
+	"bs-bookshelfui-bookmetatag-title": "标题",
+	"bs-bookshelfui-bookmetatag-subtitle": "副标题"
+}
