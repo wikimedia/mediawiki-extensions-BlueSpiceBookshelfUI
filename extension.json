@@ -27,6 +27,10 @@
 				"bookshelfbookui-viewspecialpage": {
 					"type": "global",
 					"roles": [ "reader" ]
+				},
+				"bookshelf-viewspecialpage": {
+					"type": "global",
+					"roles": [ "reader" ]
 				}
 			},
 			"DynamicFileRegistry": {
@@ -57,12 +61,14 @@
 	"GroupPermissions": {
 		"*": {
 			"bookshelfbookmanager-viewspecialpage": true,
-			"bookshelfbookui-viewspecialpage": true
+			"bookshelfbookui-viewspecialpage": true,
+			"bookshelf-viewspecialpage": true
 		}
 	},
 	"AvailableRights": [
 		"bookshelfbookmanager-viewspecialpage",
-		"bookshelfbookui-viewspecialpage"
+		"bookshelfbookui-viewspecialpage",
+		"bookshelf-viewspecialpage"
 	],
 	"config_prefix": "bsg",
 	"config": {
@@ -73,7 +79,8 @@
 	},
 	"SpecialPages": {
 		"BookshelfBookUI": "SpecialBookshelfBookUI",
-		"BookshelfBookManager": "SpecialBookshelfBookManager"
+		"BookshelfBookManager": "SpecialBookshelfBookManager",
+		"Bookshelf": "\\BlueSpice\\BookshelfUI\\Special\\Bookshelf"
 	},
 	"APIModules": {
 		"bs-bookshelf-manage": "ApiBookshelfManage",
@@ -86,7 +93,7 @@
 		]
 	},
 	"ExtensionMessagesFiles": {
-		"BookshelfBookUIAlias": "languages/SpecialBookshelfBookUI.alias.php"
+		"BlueSpiceBookshelfUIAlias": "languages/BookshelfUI.alias.php"
 	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\BookshelfUI\\": "src/",
@@ -160,6 +167,17 @@
 			"dependencies": [
 				"ext.bluespice.bookshelfUI",
 				"ext.bluespice.extjs"
+			]
+		},
+		"ext.bluespice.bookshelfUI.special": {
+			"scripts": [
+				"bluespice.bookshelfUI.special.js"
+			],
+			"styles": [
+				"bluespice.bookshelfUI.special.css"
+			],
+			"dependencies": [
+				"ext.bluespice.bookshelfUI.flyout"
 			]
 		},
 		"ext.bluespice.bookshelfUI.editor": {
@@ -249,8 +267,12 @@
 	"Hooks": {
 		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\BookshelfUI\\Hook\\SkinTemplateOutputPageBeforeExec\\AddBookshelfUI::callback",
 		"UnitTestsList" : "BookshelfUI::onUnitTestsList",
-		"BeforePageDisplay": "\\BlueSpice\\BookshelfUI\\Hook\\BeforePageDisplay\\AddResources::callback"
+		"BeforePageDisplay": "\\BlueSpice\\BookshelfUI\\Hook\\BeforePageDisplay\\AddResources::callback",
+		"GetPreferences": "\\BlueSpice\\BookshelfUI\\Hook\\GetPreferences\\BookshelfDefaultView::callback"
 	},
 	"manifest_version": 2,
+	"DefaultUserOptions": {
+		"bs-bookshelfui-defaultview": "gridviewpanel"
+	},
 	"load_composer_autoloader": true
 }

@@ -1,6 +1,8 @@
 Ext.define( 'BS.BookshelfUI.flyout.GeneralBooks', {
 	extend: 'BS.flyout.TabbedDataViewBase',
 	commonStoreApiAction: 'bs-bookshelf-store',
+	gridFeatures: [],
+	storeGrouper: null,
 
 	showAddIcon: function() {
 		return false;
@@ -16,7 +18,8 @@ Ext.define( 'BS.BookshelfUI.flyout.GeneralBooks', {
 				'book_first_chapter_prefixedtext', 'book_prefixedtext',
 				'book_type', 'book_displaytext', 'book_meta',
 				'book_first_chapter_link' ],
-			apiAction: this.commonStoreApiAction
+			apiAction: this.commonStoreApiAction,
+			grouper: this.storeGrouper
 		} );
 	},
 
@@ -62,4 +65,8 @@ Ext.define( 'BS.BookshelfUI.flyout.GeneralBooks', {
 			}
 		}];
 	},
+
+	makeGridFeatures: function() {
+		return this.gridFeatures;
+	}
 });
