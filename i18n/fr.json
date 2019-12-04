@@ -3,7 +3,8 @@
 		"authors": [
 			"Eihel",
 			"Gomoko",
-			"Verdy p"
+			"Verdy p",
+			"Aaribaud"
 		]
 	},
 	"bs-bookshelfui-extension-description": "Permet à BlueSpice de gérer les collections hiérarchiques de pages wiki.",
@@ -33,7 +34,7 @@
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Page wiki",
 	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "Titre affiché",
 	"bs-bookshelfui-ctxmnu-open": "Ouvrir la page wiki dans une nouvelle fenêtre",
-	"bs-bookshelfui-ctxmnu-edit": "Afficher le titre affiché",
+	"bs-bookshelfui-ctxmnu-edit": "Modifier le titre affiché",
 	"bs-bookshelfui-ctxmnu-delete": "Supprimer du livre",
 	"bs-bookshelfui-ctxmnu-tag-edit": "Modifier les paramètres",
 	"bs-bookshelfui-dlg-metadata-title": "Métadonnées",
