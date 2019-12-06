@@ -16,7 +16,6 @@ class ImageExternal extends \BlueSpice\DynamicFileDispatcher\File {
 	 *
 	 * @param Module $dfd
 	 * @param sring $src
-	 * @param \User $user
 	 */
 	public function __construct( Module $dfd, $src ) {
 		parent::__construct( $dfd );
@@ -29,13 +28,16 @@ class ImageExternal extends \BlueSpice\DynamicFileDispatcher\File {
 	 * @return void
 	 */
 	public function setHeaders( \WebResponse $response ) {
-
 		$response->header(
 			"Location:$this->src",
 			true
 		);
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getMimeType() {
 		return '';
 	}

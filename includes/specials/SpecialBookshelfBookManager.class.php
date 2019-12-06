@@ -5,7 +5,11 @@ use BlueSpice\Special\ManagerBase;
 class SpecialBookshelfBookManager extends ManagerBase {
 
 	public function __construct() {
-		parent::__construct( 'BookshelfBookManager', 'bookshelfbookmanager-viewspecialpage', true );
+		parent::__construct(
+			'BookshelfBookManager',
+			'bookshelfbookmanager-viewspecialpage',
+			true
+		);
 	}
 
 	/**
@@ -24,12 +28,16 @@ class SpecialBookshelfBookManager extends ManagerBase {
 		];
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getJSVars() {
 		$config = new stdClass();
-		$config->dependencies = array(
+		$config->dependencies = [
 			'ext.bluespice.extjs'
-		);
-		Hooks::run( 'BSBookshelfBookManager', array( $this, $this->getOutput(), $config ) );
+		];
+		Hooks::run( 'BSBookshelfBookManager', [ $this, $this->getOutput(), $config ] );
 
 		return [
 			'bsBookshelfBookManagerConfig' => $config

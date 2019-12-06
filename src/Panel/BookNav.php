@@ -7,6 +7,10 @@ use BlueSpice\Calumma\IActiveStateProvider;
 
 class BookNav extends PanelContainer implements IActiveStateProvider {
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function makePanels() {
 		return [
 			'general-books' => new GeneralBooksFlyout( $this->skintemplate ),
@@ -14,10 +18,18 @@ class BookNav extends PanelContainer implements IActiveStateProvider {
 		];
 	}
 
+	/**
+	 *
+	 * @return Message
+	 */
 	public function getTitleMessage() {
 		return wfMessage( 'bs-bookshelf-specialpage-title' );
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	public function getHtmlId() {
 		return 'bs-nav-section-bs-bookshelfui';
 	}
@@ -29,9 +41,9 @@ class BookNav extends PanelContainer implements IActiveStateProvider {
 	public function isActive() {
 		$panels = $this->makePanels();
 		foreach ( $panels as $panel ) {
-			if( ( $panel instanceof IActiveStateProvider ) ) {
+			if ( ( $panel instanceof IActiveStateProvider ) ) {
 
-				if( $panel->isActive() ) {
+				if ( $panel->isActive() ) {
 					return true;
 				}
 			}
