@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"bs-bookshelfui-delete-book-title": "Radera bok",
+	"bs-bookshelfui-manager-deletingprogress-title": "Raderar...",
+	"bs-bookshelfui-dlg-choosewikipage-title": "Wikisida",
+	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Wikisida",
+	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|En bok|$1 böcker}})",
+	"bs-bookshelfui-grouping-template-type-user_book": "Egna böcker",
+	"bs-bookshelfui-dlg-choosecategory-label": "Kategori",
+	"bs-bookshelfui-dlg-type-label": "Källa",
+	"bs-bookshelfui-book-title-link-edit-text": "Redigera bok",
+	"bs-bookshelfui-bookmetatag-title": "Titel",
+	"bs-bookshelfui-bookmetatag-version": "Version"
+}
