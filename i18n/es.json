@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DannyS712",
-			"Fitoschido"
+			"Fitoschido",
+			"Ihojose"
 		]
 	},
 	"bookshelfbookui": "Editor de libros",
@@ -15,10 +16,12 @@
 	"bs-bookshelfui-export-selection": "Exportar selección",
 	"bs-bookshelfui-bookui-savingprogress-text": "Aguarda mientras el libro se almacena en el servidor",
 	"bs-bookshelfui-manager-title": "Título",
+	"bs-bookshelfui-manager-deletingprogress-text": "Eliminado libro seleccionado",
 	"bs-bookshelfui-manager-deletingprogress-title": "Eliminando…",
 	"bs-bookshelfui-manager-deletionsuccess-text": "Se eliminó el libro correctamente.",
 	"bs-bookshelfui-manager-deletionfailure-title": "Se produjo un error al eliminar.",
 	"bs-bookshelfui-manager-deletionfailure-text": "Se produjo el error siguiente al tratar de eliminar el libro: $1",
+	"bs-bookshelfui-dlg-choosewikipage-title": "Wikipage",
 	"bs-bookshelfui-ctxmnu-edit": "Editar título para mostrar",
 	"bs-bookshelfui-ctxmnu-delete": "Eliminar del libro",
 	"bs-bookshelfui-ctxmnu-tag-edit": "Editar configuración",
