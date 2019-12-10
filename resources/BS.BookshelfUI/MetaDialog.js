@@ -24,5 +24,11 @@ Ext.define( 'BS.BookshelfUI.MetaDialog', {
 	getData: function() {
 		var metas = this.mgMeta.getData();
 		return this.mgMeta.getData(metas);
+	},
+
+	makeMainFormPanel: function() {
+		var mainFormPanel = this.callParent();
+		mainFormPanel.getForm().clearListeners();
+		return mainFormPanel;
 	}
 });
