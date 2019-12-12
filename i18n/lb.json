@@ -5,9 +5,12 @@
 		]
 	},
 	"bs-bookshelfui-widget-editor-link-text": "Dëst Buch änneren",
+	"bs-bookshelfui-new-book-text": "Buchtitel",
+	"bs-bookshelfui-delete-book-title": "Buch läschen",
 	"bs-bookshelfui-bookui-savingprogress-title": "Buch späicheren",
 	"bs-bookshelfui-manager-title": "Titel",
 	"bs-bookshelfui-manager-deletingprogress-title": "Läschen...",
+	"bs-bookshelfui-manager-deletionsuccess-title": "Geläscht!",
 	"bs-bookshelfui-manager-deletionfailure-title": "Feeler beim Läschen!",
 	"bs-bookshelfui-dlg-choosewikipage-title": "WikiSäit",
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "WikiSäit",

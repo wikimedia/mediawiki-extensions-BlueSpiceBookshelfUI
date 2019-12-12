@@ -4,6 +4,7 @@
 			"Saederup92"
 		]
 	},
+	"bs-bookshelfui-widget-editor-link-text": "Rediger denne bog",
 	"bs-bookshelfui-new-book-title": "Opret en ny bog",
 	"bs-bookshelfui-delete-book-title": "Slet bog",
 	"bs-bookshelfui-bookui-savingprogress-title": "Gemmer bog",
@@ -13,11 +14,13 @@
 	"bs-bookshelfui-confirm-delete-title": "Fjern kapitel",
 	"bs-bookshelfui-nothingtoexport-text": "Dit valg er tomt",
 	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|En bog|$1 bøger}})",
+	"bs-bookshelfui-grouping-template-type-ns_book": "Generelle bøger",
 	"bs-bookshelfui-grouping-template-type-user_book": "Egne bøger",
 	"bs-bookshelfui-book-type": "Bogens type",
 	"bs-bookshelfui-dlg-choosecategory-label": "Kategori",
 	"bs-bookshelfui-dlg-type-label": "Kilde",
 	"bs-bookshelfui-type-subpages": "Alle undersider af en side",
+	"bs-bookshelfui-flyout-title": "Liste over bøger",
 	"bs-bookshelfui-book-title-link-edit": "Rediger bog",
 	"bs-bookshelfui-book-title-link-edit-text": "Rediger bog",
 	"bs-bookshelfui-export-book-text": "Vent venligst mens bogen bliver oprettet.",
