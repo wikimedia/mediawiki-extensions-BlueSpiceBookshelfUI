@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ykhwong"
+			"Ykhwong",
+			"SeoJeongHo"
 		]
 	},
 	"bookshelfbookui": "책 편집기",
@@ -23,6 +24,7 @@
 	"bs-bookshelfui-manager-deletionfailure-text": "책 삭제 시도 중 다음의 오류가 발생했습니다: $1",
 	"bs-bookshelfui-dlg-choosewikipage-title": "위키페이지",
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "위키페이지",
+	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "표시 제목",
 	"bs-bookshelfui-ctxmnu-edit": "표시 제목 편집",
 	"bs-bookshelfui-ctxmnu-delete": "책에서 삭제",
 	"bs-bookshelfui-ctxmnu-tag-edit": "설정 편집",
@@ -36,6 +38,7 @@
 	"bs-bookshelfui-book-type": "책 유형",
 	"bs-bookshelfui-empty-selection": "선택된 항목 없음",
 	"bs-bookshelfui-dlg-choosecategory-label": "분류",
+	"bs-bookshelfui-dlg-type-label": "출처",
 	"bs-bookshelfui-extjs-tooltip-add-mass": "대량 추가",
 	"bs-bookshelfui-dlg-addmass-title": "대량 추가",
 	"bs-bookshelfui-type-category": "분류에 속하는 모든 문서",
@@ -55,6 +58,7 @@
 	"bs-bookshelfui-bookmetatag-author1": "저자 1",
 	"bs-bookshelfui-bookmetatag-author2": "저자 2",
 	"bs-bookshelfui-bookmetatag-docummenttype": "문서 유형",
+	"bs-bookshelfui-bookmetatag-version": "버전",
 	"bs-bookshelfui-extjs-tooltip-copy": "복사",
 	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "반환할 결과 수"
 }
