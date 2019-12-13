@@ -2,7 +2,7 @@
 
 namespace BlueSpice\BookshelfUI;
 
-use SkinTemplate;
+use QuickTemplate;
 
 class SidebarBooklist {
 
@@ -10,17 +10,18 @@ class SidebarBooklist {
 
 	/**
 	 *
-	 * @param SkinTemplate $template
+	 * @param QuickTemplate $template
 	 * @param \DOMElement|null $domElement
 	 * @param int $indent
 	 */
-	public function __construct( $template, \DOMElement $domElement = null, $indent = 0 ) {
+	public function __construct( QuickTemplate $template, \DOMElement $domElement = null,
+		$indent = 0 ) {
 		$this->skinTemplate = $template;
 	}
 
 	/**
 	 *
-	 * @return \BaseTemplate
+	 * @return QuickTemplate
 	 */
 	public function getSkinTemplate() {
 		return $this->skinTemplate;
