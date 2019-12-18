@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robert Vogel <vogel@hallowelt.biz>"
+			"Robert Vogel <vogel@hallowelt.biz>",
+			"Hikemaniac"
 		]
 	},
 	"bs-bookshelfui-extension-description": "Ermöglicht das Verwalten von hierarchisch gegliederten Seitensammlungen.",
@@ -77,5 +78,6 @@
 	"bs-bookshelfui-bookmetatag-docummenttype": "Dokumententyp",
 	"bs-bookshelfui-bookmetatag-department": "Abteilung",
 	"bs-bookshelfui-bookmetatag-version": "Version",
-	"bs-bookshelfui-extjs-tooltip-copy": "Kopieren"
+	"bs-bookshelfui-extjs-tooltip-copy": "Kopieren",
+	"bs-bookshelfui-prof-defaultview": "Standardansicht"
 }

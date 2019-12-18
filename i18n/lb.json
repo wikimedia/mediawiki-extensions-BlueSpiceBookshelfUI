@@ -14,6 +14,7 @@
 	"bs-bookshelfui-manager-deletionfailure-title": "Feeler beim Läschen!",
 	"bs-bookshelfui-dlg-choosewikipage-title": "WikiSäit",
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "WikiSäit",
+	"bs-bookshelfui-dlg-copy-name-addition": "(Kopie)",
 	"bs-bookshelfui-dlg-copy-target-name-label": "Zilnumm",
 	"bs-bookshelfui-confirm-delete-title": "Kapitel ewechhuelen",
 	"bs-bookshelfui-grouping-template-type-ns_book": "Allgemeng Bicher",
@@ -33,5 +34,6 @@
 	"bs-bookshelfui-bookmetatag-department": "Departement",
 	"bs-bookshelfui-bookmetatag-version": "Versioun",
 	"bs-bookshelfui-extjs-tooltip-copy": "Kopéieren",
+	"bookshelf-summary": "Allgemeng Bicher",
 	"bs-bookshelfui-prof-defaultview-images": "Biller"
 }
