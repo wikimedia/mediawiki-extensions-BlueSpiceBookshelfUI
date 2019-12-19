@@ -55,5 +55,10 @@
 	"bs-bookshelfui-bookmetatag-docummenttype": "Tipo de documento",
 	"bs-bookshelfui-bookmetatag-department": "Departamento",
 	"bs-bookshelfui-bookmetatag-version": "Versión",
-	"bs-bookshelfui-extjs-tooltip-copy": "Copiar"
+	"bs-bookshelfui-extjs-tooltip-copy": "Copiar",
+	"bookshelf": "Estantería",
+	"bookshelf-summary": "Libros generales",
+	"bs-bookshelfui-prof-defaultview": "Vista predeterminada",
+	"bs-bookshelfui-prof-defaultview-grid": "Cuadrícula",
+	"bs-bookshelfui-prof-defaultview-images": "Imágenes"
 }

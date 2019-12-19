@@ -41,5 +41,8 @@
 	"bs-bookshelfui-bookmetatag-docummentidentifier": "Dokument-ID",
 	"bs-bookshelfui-bookmetatag-docummenttype": "Dokumenttyp",
 	"bs-bookshelfui-bookmetatag-version": "Version",
-	"bs-bookshelfui-extjs-tooltip-copy": "Kopiera"
+	"bs-bookshelfui-extjs-tooltip-copy": "Kopiera",
+	"bookshelf": "Bokhylla",
+	"bs-bookshelfui-prof-defaultview-grid": "Rutnät",
+	"bs-bookshelfui-prof-defaultview-images": "Bilder"
 }
