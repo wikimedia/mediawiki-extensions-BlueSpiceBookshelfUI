@@ -2,7 +2,7 @@
 
 namespace BlueSpice\BookshelfUI;
 
-use SkinTemplate;
+use BaseTemplate;
 use PageHierarchyProvider;
 use BSTreeNode;
 
@@ -10,23 +10,24 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 
 	/**
 	 *
-	 * @var SkinTemplate
+	 * @var BaseTemplate
 	 */
 	protected $skinTemplate = null;
 
 	/**
 	 *
-	 * @param SkinTemplate $template
+	 * @param BaseTemplate $template
 	 * @param \DOMElement|null $domElement
 	 * @param int $indent
 	 */
-	public function __construct( $template, \DOMElement $domElement = null, $indent = 0 ) {
+	public function __construct( BaseTemplate $template, \DOMElement $domElement = null,
+		$indent = 0 ) {
 		$this->skinTemplate = $template;
 	}
 
 	/**
 	 *
-	 * @return SkinTemplate
+	 * @return BaseTemplate
 	 */
 	public function getSkinTemplate() {
 		return $this->skinTemplate;
