@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ykhwong",
-			"SeoJeongHo"
+			"SeoJeongHo",
+			"Gongsoonyee"
 		]
 	},
 	"bookshelfbookui": "책 편집기",
@@ -60,5 +61,8 @@
 	"bs-bookshelfui-bookmetatag-docummenttype": "문서 유형",
 	"bs-bookshelfui-bookmetatag-version": "버전",
 	"bs-bookshelfui-extjs-tooltip-copy": "복사",
-	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "반환할 결과 수"
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "반환할 결과 수",
+	"bookshelf": "책장",
+	"bs-bookshelfui-prof-defaultview-grid": "그리드",
+	"bs-bookshelfui-prof-defaultview-images": "이미지"
 }
