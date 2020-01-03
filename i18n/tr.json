@@ -80,6 +80,19 @@
 	"bs-bookshelfui-extjs-tooltip-copy": "Kopyala",
 	"apihelp-bs-bookshelf-page-collection-store-summary": "Bir kitaba toplu olarak eklenebilecek bir sayfa koleksiyonu sağlar.",
 	"apihelp-bs-bookshelf-mass-add-page-store-summary": "Bir kitaba toplu olarak eklenebilecek sayfalar sağlar.",
-	"right-bookshelfbookmanager-viewspecialpage": "[[Special:BookshelfBookManager]] çzel sayfaya erişin",
-	"action-bookshelfbookmanager-viewspecialpage": "[[Special:BookshelfBookManager]] çzel sayfaya erişin"
+	"right-bookshelfbookmanager-viewspecialpage": "[[Special:BookshelfBookManager]] özel sayfaya erişin",
+	"action-bookshelfbookmanager-viewspecialpage": "[[Special:BookshelfBookManager]] özel sayfaya erişin",
+	"right-bookshelfbookui-viewspecialpage": "[[Special:BookshelfBookUI]] özel sayfaya erişin",
+	"action-bookshelfbookui-viewspecialpage": "[[Special:BookshelfBookUI]] özel sayfaya erişin",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Geri dönülecek sonuç sayısı",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-root": "Sayfaların döndürülmesine dayalı kök değeri",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-type": "Toplu ekleme için kaynak türü",
+	"bookshelf": "Kitaplık",
+	"bookshelf-summary": "Genel Kitaplar",
+	"prefs-bookshelfui": "Kitaplık özel sayfası",
+	"bs-bookshelfui-prof-defaultview": "Varsayılan görünüm",
+	"bs-bookshelfui-prof-defaultview-grid": "Izgara",
+	"bs-bookshelfui-prof-defaultview-images": "Resimler",
+	"right-bookshelf-viewspecialpage": "[[Special:Bookshelf]] özel sayfaya erişin",
+	"action-bookshelf-viewspecialpage": "[[Special:Bookshelf]] özel sayfaya erişin"
 }
