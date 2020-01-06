@@ -32,5 +32,6 @@
 	"bookshelf": "Prestatgeria",
 	"bookshelf-summary": "Llibres generals",
 	"bs-bookshelfui-prof-defaultview": "Vista per defecte",
+	"bs-bookshelfui-prof-defaultview-grid": "Graella",
 	"bs-bookshelfui-prof-defaultview-images": "Imatges"
 }
