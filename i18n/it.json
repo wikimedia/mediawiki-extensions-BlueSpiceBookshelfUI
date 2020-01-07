@@ -58,7 +58,7 @@
 	"bs-bookshelfui-book-title-link-edit-text": "Modifica libro",
 	"bs-bookshelfui-export-book-text": "Attendi per favore mentre il libro viene creato.",
 	"bs-bookshelfui-bookmanager-deletion-reason": "Eliminato da BookManager",
-	"bs-bookshelfui-bookmanager-deletion-error-pageid": "L'articolo richiesto non è stato trovato.",
+	"bs-bookshelfui-bookmanager-deletion-error-pageid": "La voce indicata non è stata trovata.",
 	"bs-bookshelfui-bookmetatag-title": "Titolo",
 	"bs-bookshelfui-bookmetatag-subtitle": "Sottotitolo",
 	"bs-bookshelfui-bookmetatag-author1": "Autore 1",
