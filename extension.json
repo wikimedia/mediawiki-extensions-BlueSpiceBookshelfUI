@@ -248,7 +248,6 @@
 	},
 	"Hooks": {
 		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\BookshelfUI\\Hook\\SkinTemplateOutputPageBeforeExec\\AddBookshelfUI::callback",
-		"UnitTestsList" : "BookshelfUI::onUnitTestsList",
 		"BeforePageDisplay": "\\BlueSpice\\BookshelfUI\\Hook\\BeforePageDisplay\\AddResources::callback"
 	},
 	"manifest_version": 2,
