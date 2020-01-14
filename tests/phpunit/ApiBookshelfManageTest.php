@@ -2,8 +2,8 @@
 
 namespace BlueSpice\BookshelfUI\Tests;
 
-use Title;
 use BlueSpice\Tests\BSApiTasksTestBase;
+use Title;
 
 /**
  * @group medium

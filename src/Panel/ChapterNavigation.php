@@ -2,10 +2,10 @@
 
 namespace BlueSpice\BookshelfUI\Panel;
 
-use Message;
-use BlueSpice\Calumma\Panel\BasePanel;
 use BlueSpice\BookshelfUI\SidebarTreeNavigation;
 use BlueSpice\Calumma\IActiveStateProvider;
+use BlueSpice\Calumma\Panel\BasePanel;
+use Message;
 
 class ChapterNavigation extends BasePanel implements IActiveStateProvider {
 

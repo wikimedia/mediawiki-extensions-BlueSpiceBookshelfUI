@@ -3,8 +3,8 @@
 namespace BlueSpice\BookshelfUI;
 
 use BaseTemplate;
-use PageHierarchyProvider;
 use BSTreeNode;
+use PageHierarchyProvider;
 
 class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 

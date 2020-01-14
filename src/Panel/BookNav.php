@@ -2,8 +2,8 @@
 
 namespace BlueSpice\BookshelfUI\Panel;
 
-use BlueSpice\Calumma\Panel\PanelContainer;
 use BlueSpice\Calumma\IActiveStateProvider;
+use BlueSpice\Calumma\Panel\PanelContainer;
 
 class BookNav extends PanelContainer implements IActiveStateProvider {
 

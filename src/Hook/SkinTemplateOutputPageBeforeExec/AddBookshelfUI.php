@@ -2,9 +2,9 @@
 
 namespace BlueSpice\BookshelfUI\Hook\SkinTemplateOutputPageBeforeExec;
 
+use BlueSpice\BookshelfUI\Panel\BookNav;
 use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
-use BlueSpice\BookshelfUI\Panel\BookNav;
 
 class AddBookshelfUI extends SkinTemplateOutputPageBeforeExec {
 

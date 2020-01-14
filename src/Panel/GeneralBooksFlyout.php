@@ -2,9 +2,9 @@
 
 namespace BlueSpice\BookshelfUI\Panel;
 
-use Message;
-use BlueSpice\Calumma\Panel\BasePanel;
 use BlueSpice\Calumma\IFlyout;
+use BlueSpice\Calumma\Panel\BasePanel;
+use Message;
 
 class GeneralBooksFlyout extends BasePanel implements IFlyout {
 
