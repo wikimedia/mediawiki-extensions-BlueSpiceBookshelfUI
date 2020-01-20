@@ -3,7 +3,9 @@
 		"authors": [
 			"DannyS712",
 			"Fitoschido",
-			"Ihojose"
+			"Ihojose",
+			"Agusbou2015",
+			"Joanmp17"
 		]
 	},
 	"bookshelfbookui": "Editor de libros",
@@ -18,6 +20,7 @@
 	"bs-bookshelfui-manager-title": "Título",
 	"bs-bookshelfui-manager-deletingprogress-text": "Eliminado libro seleccionado",
 	"bs-bookshelfui-manager-deletingprogress-title": "Eliminando…",
+	"bs-bookshelfui-manager-deletionsuccess-title": "¡Borrado con éxito!",
 	"bs-bookshelfui-manager-deletionsuccess-text": "Se eliminó el libro correctamente.",
 	"bs-bookshelfui-manager-deletionfailure-title": "Se produjo un error al eliminar.",
 	"bs-bookshelfui-manager-deletionfailure-text": "Se produjo el error siguiente al tratar de eliminar el libro: $1",
@@ -34,6 +37,7 @@
 	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|1 libro|$1 libros}})",
 	"bs-bookshelfui-grouping-template-type-ns_book": "Libros generales",
 	"bs-bookshelfui-grouping-template-type-user_book": "Libros propios",
+	"bs-bookshelfui-book-type": "Tipo del libro",
 	"bs-bookshelfui-empty-selection": "No se ha seleccionado nada",
 	"apihelp-bs-bookshelf-manage-summary": "Brinda tareas de manipulación de libros.",
 	"bs-bookshelfui-dlg-choosecategory-label": "Categoría",
@@ -51,6 +55,8 @@
 	"bs-bookshelfui-bookmanager-deletion-error-unkown": "Se produjo un error desconocido. Ponte en contacto con el personal técnico.",
 	"bs-bookshelfui-bookmetatag-title": "Título",
 	"bs-bookshelfui-bookmetatag-subtitle": "Subtítulo",
+	"bs-bookshelfui-bookmetatag-author1": "Autor 1",
+	"bs-bookshelfui-bookmetatag-author2": "Autor 2",
 	"bs-bookshelfui-bookmetatag-docummentidentifier": "Id. de documento",
 	"bs-bookshelfui-bookmetatag-docummenttype": "Tipo de documento",
 	"bs-bookshelfui-bookmetatag-department": "Departamento",
