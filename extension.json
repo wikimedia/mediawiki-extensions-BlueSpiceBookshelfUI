@@ -13,7 +13,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceBookshelfUI": {
-					"className": "BookshelfUI",
+					"className": "\\BlueSpice\\BookshelfUI\\Extension",
 					"extPath": "/BlueSpiceBookshelfUI",
 					"package": "BlueSpice Pro",
 					"status": "stable"
@@ -100,7 +100,6 @@
 		"BlueSpice\\BookshelfUI\\Tests\\": "tests/phpunit/"
 	},
 	"AutoloadClasses": {
-		"BookshelfUI": "BookshelfUI.class.php",
 		"SpecialBookshelfBookUI": "includes/specials/SpecialBookshelfBookUI.class.php",
 		"SpecialBookshelfBookManager": "includes/specials/SpecialBookshelfBookManager.class.php",
 		"ApiBookshelfManage": "includes/api/ApiBookshelfManage.php",
