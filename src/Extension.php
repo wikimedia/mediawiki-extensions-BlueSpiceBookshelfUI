@@ -28,50 +28,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+namespace BlueSpice\BookshelfUI;
 
-class BookshelfUI extends BsExtensionMW {
+use BlueSpice\Extension as ExtensionBase;
 
-	public static function ajaxGetAllBooksForComboBox() {
-		$oResult = new stdClass();
-		$oResult->books = [];
-
-		if ( Title::makeTitle( NS_BOOK, 'X' )->userCan( 'read' ) === false ) {
-			return FormatJson::encode( $oResult );
-		}
-
-		$dbr = wfGetDB( DB_REPLICA );
-		$res = $dbr->select(
-			'page',
-			[ 'page_id', 'page_title' ],
-			[ 'page_namespace' => NS_BOOK ],
-			__METHOD__,
-			[ 'ORDER BY' => 'page_title' ]
-		);
-
-		foreach ( $res as $row ) {
-			$oTitle = Title::newFromID( $row->page_id );
-			$oPHP = PageHierarchyProvider::getInstanceFor( $oTitle->getPrefixedText() );
-			$aTOC = $oPHP->getExtendedTOCArray();
-
-			if ( !isset( $aTOC[0] ) ) {
-				continue;
-			}
-
-			$aFirstTitle = $aTOC[0];
-			$oFirstTitle = Title::newFromText( $aFirstTitle['title'] );
-
-			if ( $oFirstTitle->userCan( 'read' ) === false ) {
-				continue;
-			}
-
-			$oBook = new stdClass();
-			$oBook->page_id = $row->page_id;
-			$oBook->page_title = $row->page_title;
-			$oBook->book_first_chapter_prefixedtext = $oFirstTitle->getPrefixedText();
-
-			$oResult->books[] = $oBook;
-		}
-		return FormatJson::encode( $oResult );
-	}
-
+class Extension extends ExtensionBase {
 }
