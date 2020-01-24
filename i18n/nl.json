@@ -15,6 +15,7 @@
 	"bs-bookshelfui-confirm-delete-title": "Hoofdstuk verwijderen",
 	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|Één boek|$1 boeken}})",
 	"bs-bookshelfui-grouping-template-type-ns_book": "Algemene boeken",
+	"bs-bookshelfui-empty-selection": "Niets geselecteerd",
 	"bs-bookshelfui-dlg-choosecategory-label": "Categorie",
 	"bs-bookshelfui-dlg-type-label": "Bron",
 	"bs-bookshelfui-extjs-tooltip-add-mass": "Massaal toevoegen",
@@ -32,5 +33,6 @@
 	"bs-bookshelfui-bookmetatag-department": "Afdeling",
 	"bs-bookshelfui-bookmetatag-version": "Versie",
 	"bs-bookshelfui-extjs-tooltip-copy": "Kopiëren",
-	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Aantal resultaten om te tonen"
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Aantal resultaten om te tonen",
+	"bs-bookshelfui-prof-defaultview-images": "Afbeeldingen"
 }
