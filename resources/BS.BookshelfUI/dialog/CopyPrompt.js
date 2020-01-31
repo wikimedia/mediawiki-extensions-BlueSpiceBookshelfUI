@@ -5,6 +5,7 @@ Ext.define( 'BS.BookshelfUI.dialog.CopyPrompt',{
 		'BS.action.APICopyPage', 'BS.dialog.BatchActions'
 	],
 	//modal:true,
+	bookPages: [],
 
 	makeItems: function() {
 		this.tfTargetBookTitle = new Ext.form.field.Text({
@@ -78,6 +79,8 @@ Ext.define( 'BS.BookshelfUI.dialog.CopyPrompt',{
 		var targetTitlePrefix = this.getTargetNSPrefix();
 		var actions = [];
 
+		me.bookPages = this.getBookPagesFlat( content );
+
 		var modifiedContent = content.replace(/\[\[(.*?)\]\]/gi, function( fullmatch, group ) {
 			var linkParts = group.split('|');
 			var actionCfg = {
@@ -91,7 +94,6 @@ Ext.define( 'BS.BookshelfUI.dialog.CopyPrompt',{
 				title = new mw.Title( linkParts[0] );
 			}
 			catch( e ) {
-				console.log( e );
 				return fullmatch;
 			}
 
@@ -139,18 +141,45 @@ Ext.define( 'BS.BookshelfUI.dialog.CopyPrompt',{
 			}
 			catch( e ) {
 				return fullmatch;
-				console.log( e );
 			}
-			if( !title || ( title.getNamespaceId() < 3000 && title.getNamespaceId() !== bs.ns.NS_MAIN ) ) {
+			if ( !this.shouldModifyLink( title ) ) {
 				return fullmatch;
 			}
 
 			linkParts[0] = targetTitlePrefix + title.getNameText();
 			return '[['+linkParts.join( '|' )+']]';
-		});
+		}.bind( this ) );
 		edit.content = edit.content.replace(/<(bs:)?bookshelf.*?(src|book)=\"(.*?)\".*?\/>/gi, function( fullmatch, group ) {
 			return '<bs:bookshelf src="'+bookTitle.getPrefixedText()+'" />';
 		});
+	},
+
+	getBookPagesFlat: function( content ) {
+		var regex = new RegExp( /\[\[(.*?)\]\]/, 'gi' ),
+			pages = [], match, title;
+		do {
+			match = regex.exec( content );
+			if ( match ) {
+				title = new mw.Title( match[1].split( '|' )[0] );
+				if ( title ) {
+					pages.push( title );
+				}
+			}
+		} while ( match );
+
+		return pages;
+	},
+
+	shouldModifyLink: function( title ) {
+		if ( !title ) {
+			return false;
+		}
+		for ( var i = 0; i < this.bookPages.length; i++ ) {
+			if ( this.bookPages[i].getPrefixedDb() === title.getPrefixedDb() ) {
+				return true;
+			}
+		}
+		return false;
 	},
 
 	getTargetNSPrefix: function () {
