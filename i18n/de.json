@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Robert Vogel <vogel@hallowelt.biz>",
-			"Hikemaniac"
+			"Hikemaniac",
+			"Mglaser"
 		]
 	},
 	"bs-bookshelfui-extension-description": "Ermöglicht das Verwalten von hierarchisch gegliederten Seitensammlungen.",
@@ -79,5 +80,21 @@
 	"bs-bookshelfui-bookmetatag-department": "Abteilung",
 	"bs-bookshelfui-bookmetatag-version": "Version",
 	"bs-bookshelfui-extjs-tooltip-copy": "Kopieren",
-	"bs-bookshelfui-prof-defaultview": "Standardansicht"
+	"apihelp-bs-bookshelf-page-collection-store-summary": "Stellt eine Sammlung von Seiten bereit, die zusammen zu einem Buch hinzugefügt werden können.",
+	"apihelp-bs-bookshelf-mass-add-page-store-summary": "Stellt Seiten bereit, die zusammen zu einem Buch hinzugefügt werden können.",
+	"right-bookshelfbookmanager-viewspecialpage": "Zugriff auf die Spezialseite [[Special:BookshelfBookManager|Bücherverwaltung]]",
+	"action-bookshelfbookmanager-viewspecialpage": "die Spezialseite [[Special:BookshelfBookManager|Bücherverwaltung]] aufzurufen",
+	"right-bookshelfbookui-viewspecialpage": "Zugriff auf die Spezialseite [[Special:BookshelfBookUI|Bucheditor]]",
+	"action-bookshelfbookui-viewspecialpage": "die Spezialseite [[Special:BookshelfBookUI|Bucheditor]] aufzurufen",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Anzahl der zu liefernden Ergebnisse",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-root": "Basiswert, auf dessen Grundlage die Seiten zurückgegeben werden",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-type": "Art der Quelle für das Massenhinzufügen",
+	"bookshelf": "Bücherregal",
+	"bookshelf-summary": "Allgemeine Bücher",
+	"prefs-bookshelfui": "Bücherregal Spezialseite",
+	"bs-bookshelfui-prof-defaultview": "Standardansicht",
+	"bs-bookshelfui-prof-defaultview-grid": "Raster",
+	"bs-bookshelfui-prof-defaultview-images": "Bilder",
+	"right-bookshelf-viewspecialpage": "Zugriff auf die Spezialseite [[Special:Bookshelf|Bücherregal]]",
+	"action-bookshelf-viewspecialpage": "die Spezialseite [[Special:Bookshelf|Bücherregal]] aufzurufen"
 }
