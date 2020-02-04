@@ -24,5 +24,19 @@
 	"bs-bookshelfui-bookmetatag-author1": "Forfatter 1",
 	"bs-bookshelfui-bookmetatag-author2": "Forfatter 2",
 	"bs-bookshelfui-bookmetatag-docummenttype": "Dokument type",
-	"bs-bookshelfui-bookmetatag-department": "Afdeling"
+	"bs-bookshelfui-bookmetatag-department": "Afdeling",
+	"bs-bookshelfui-widget-editor-link-text": "Rediger denne bog",
+	"bs-bookshelfui-new-book-text": "Bogtitel",
+	"bs-bookshelfui-manager-deletingprogress-text": "Sletter valgte bog",
+	"bs-bookshelfui-ctxmnu-tag-edit": "Rediger indstillinger",
+	"bs-bookshelfui-grouping-template-type-ns_book": "Generelle bøger",
+	"bs-bookshelfui-empty-selection": "Intet valgt",
+	"bs-bookshelfui-type-category": "Alle sider i en kategori",
+	"bs-bookshelfui-nav-link-title-all-books": "Generelle bøger",
+	"bs-bookshelfui-flyout-title": "Liste over bøger",
+	"bs-bookshelfui-export-book-text": "Vent venligst mens bogen bliver oprettet.",
+	"bookshelf": "Boghylde",
+	"bookshelf-summary": "Generelle bøger",
+	"bs-bookshelfui-prof-defaultview": "Standardvisning",
+	"bs-bookshelfui-prof-defaultview-images": "Billeder"
 }

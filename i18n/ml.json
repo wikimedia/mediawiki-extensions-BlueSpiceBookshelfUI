@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Adithyak1997"
+			"Adithyak1997",
+			"Praveenp"
 		]
 	},
-	"bs-bookshelfui-widget-editor-link-text": "പുസ്തകം തിരുത്തുക",
+	"bs-bookshelfui-widget-editor-link-text": "ഈ പുസ്തകം തിരുത്തുക",
 	"bs-bookshelfui-manager-title": "തലക്കെട്ട്",
 	"bs-bookshelfui-manager-deletingprogress-text": "തിരഞ്ഞെടുത്ത പുസ്തകം ഒഴിവാക്കുന്നു",
-	"bs-bookshelfui-manager-deletionfailure-title": "മായിക്കലിൽ പിഴവ് സംഭവിച്ചിരിക്കുന്നു!",
+	"bs-bookshelfui-manager-deletionfailure-title": "മായ്ക്കലിൽ പിഴവ് സംഭവിച്ചിരിക്കുന്നു!",
 	"bs-bookshelfui-dlg-choosewikipage-title": "വിക്കിതാൾ",
 	"bs-bookshelfui-dlg-metadata-title": "മെറ്റ ഡാറ്റ",
 	"bs-bookshelfui-dlg-copy-name-addition": "(പകർത്തുക)",

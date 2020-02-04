@@ -2,7 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"DannyS712",
-			"Fitoschido"
+			"Fitoschido",
+			"Ihojose",
+			"Agusbou2015",
+			"Joanmp17",
+			"Fortega",
+			"Nancystodd"
 		]
 	},
 	"bookshelfbookui": "Editor de libros",
@@ -52,5 +57,22 @@
 	"bs-bookshelfui-bookmetatag-docummenttype": "Tipo de documento",
 	"bs-bookshelfui-bookmetatag-department": "Departamento",
 	"bs-bookshelfui-bookmetatag-version": "Versión",
-	"bs-bookshelfui-extjs-tooltip-copy": "Copiar"
+	"bs-bookshelfui-extjs-tooltip-copy": "Copiar",
+	"bs-bookshelfui-manager-deletingprogress-text": "Eliminado libro seleccionado",
+	"bs-bookshelfui-manager-deletionsuccess-title": "¡Borrado con éxito!",
+	"bs-bookshelfui-dlg-choosewikipage-title": "Wikipage",
+	"bs-bookshelfui-book-type": "Tipo del libro",
+	"bs-bookshelfui-extjs-tooltip-add-mass": "Adición masiva",
+	"bs-bookshelfui-flyout-intro": "Aquí puedes ver todos los libros disponibles. Para añadir un libro nuevo, ve a [[Special:Bookmanager|book manager]].",
+	"bs-bookshelfui-bookmanager-deletion-error-permission": "Careces de permisos suficientes para ejecutar esta acción.",
+	"bs-bookshelfui-bookmetatag-author1": "Autor 1",
+	"bs-bookshelfui-bookmetatag-author2": "Autor 2",
+	"apihelp-bs-bookshelf-page-collection-store-summary": "Proporciona una colección de páginas que puede ser añadida en bloque a un libro.",
+	"apihelp-bs-bookshelf-mass-add-page-store-summary": "Proporciona páginas que pueden ser añadidas en bloque a un libro.",
+	"right-bookshelfbookmanager-viewspecialpage": "Acceso a la página especial [[Special:BookshelfBookManager]]",
+	"bookshelf": "Estantería",
+	"bookshelf-summary": "Libros generales",
+	"bs-bookshelfui-prof-defaultview": "Vista predeterminada",
+	"bs-bookshelfui-prof-defaultview-grid": "Cuadrícula",
+	"bs-bookshelfui-prof-defaultview-images": "Imágenes"
 }
