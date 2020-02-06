@@ -4,7 +4,8 @@
 			"沈澄心",
 			"VulpesVulpes825",
 			"Wenyuan Liu",
-			"Dimension"
+			"Dimension",
+			"铁桶"
 		]
 	},
 	"bookshelfbookui": "图书编辑器",
@@ -33,6 +34,7 @@
 	"bs-bookshelfui-dlg-copy-name-addition": "（副本）",
 	"bs-bookshelfui-dlg-copy-target-name-label": "目标名称",
 	"bs-bookshelfui-confirm-delete-title": "移除章节",
+	"bs-bookshelfui-nothingtoexport-text": "您的选择为空",
 	"bs-bookshelfui-grouping-template-type-user_book": "我的图书",
 	"bs-bookshelfui-dlg-choosecategory-label": "分类",
 	"bs-bookshelfui-dlg-type-label": "来源",
@@ -45,7 +47,7 @@
 	"bs-bookshelfui-nav-link-title-all-books": "通用图书",
 	"bs-bookshelfui-book-title-link-edit": "编辑图书",
 	"bs-bookshelfui-book-title-link-edit-text": "编辑图书",
-	"bs-bookshelfui-bookmanager-deletion-error-permission": "权限不足",
+	"bs-bookshelfui-bookmanager-deletion-error-permission": "您没有权限来执行此操作。",
 	"bs-bookshelfui-bookmetatag-title": "标题",
 	"bs-bookshelfui-bookmetatag-subtitle": "副标题",
 	"bs-bookshelfui-extjs-tooltip-copy": "复制"
