@@ -35,19 +35,6 @@
 			},
 			"DynamicFileRegistry": {
 				"bookshelfimage": "\\BlueSpice\\BookshelfUI\\DynamicFileDispatcher\\BookshelfImage"
-			},
-			"LessVarsRegistry": {
-				"bs-bookshelf-navtab-icon-active": "@bs-color-tertiary",
-				"bs-extjs-bui-panel-header-background": "transparent",
-				"bs-extjs-bui-panel-header-text": "#000000",
-				"bs-extjs-bui-panel-header-horizontal-border": "0px solid #3e538a",
-				"bs-extjs-bui-panel-header-horizontal-background": "#FFFFFF",
-				"bs-extjs-bui-panel-header-vertical-border": "1px solid #3e538a",
-				"bs-extjs-bui-panel-header-vertical-background": "#FFFFFF",
-				"bs-extjs-bui-panel-default-border": "1px solid #3e538a",
-				"bs-extjs-bui-grid-header-ct-border": "1px solid silver",
-				"bs-extjs-bui-tool-img-image": "url( 'images/globalnav-sprite.png' )",
-				"bs-extjs-bui-tool-img-background": "transparent"
 			}
 		},
 		"BlueSpiceBookshelfUI": {
@@ -112,10 +99,6 @@
 		"BlueSpice\\BookshelfUI\\MassAdd\\Handler\\PageCollection": "includes/MassAdd/Handler/PageCollection.php"
 	},
 	"ResourceModules": {
-		"ext.bluespice.bookshelfUI.styles": {
-			"styles": "bluespice.bookshelfUI.less",
-			"class": "\\BlueSpice\\ResourceModule\\LessVars"
-		},
 		"ext.bluespice.bookshelfUI": {
 			"messages": [
 				"bs-deferred-action-status-pending",
@@ -171,9 +154,6 @@
 		"ext.bluespice.bookshelfUI.special": {
 			"scripts": [
 				"bluespice.bookshelfUI.special.js"
-			],
-			"styles": [
-				"bluespice.bookshelfUI.special.css"
 			],
 			"dependencies": [
 				"ext.bluespice.bookshelfUI.flyout"
