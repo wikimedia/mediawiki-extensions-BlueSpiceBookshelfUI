@@ -109,7 +109,7 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 
 	onBtnEditClick: function(  oButton, oEvent  ) {
 		var record = this.getSingleSelection();
-		var url = mw.util.wikiGetlink(
+		var url = mw.util.getUrl(
 			'Special:BookshelfBookUI/'
 			+ record.get('book_prefixedtext')
 		);
