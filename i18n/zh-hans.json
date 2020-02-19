@@ -17,8 +17,10 @@
 	"bs-bookshelfui-new-book-text": "图书标题",
 	"bs-bookshelfui-delete-book-title": "删除图书",
 	"bs-bookshelfui-export-selection": "导出选项",
+	"bs-bookshelfui-edit-source": "编辑来源Wiki页面",
 	"bs-bookshelfui-bookui-savingprogress-title": "正在保存图书",
 	"bs-bookshelfui-manager-title": "标题",
+	"bs-bookshelfui-manager-deletingprogress-text": "正在删除所选图书",
 	"bs-bookshelfui-manager-deletingprogress-title": "刪除中…",
 	"bs-bookshelfui-manager-deletionsuccess-title": "刪除成功！",
 	"bs-bookshelfui-dlg-choosewikipage-title": "Wiki页面",
@@ -50,5 +52,14 @@
 	"bs-bookshelfui-bookmanager-deletion-error-permission": "您没有权限来执行此操作。",
 	"bs-bookshelfui-bookmetatag-title": "标题",
 	"bs-bookshelfui-bookmetatag-subtitle": "副标题",
-	"bs-bookshelfui-extjs-tooltip-copy": "复制"
+	"bs-bookshelfui-bookmetatag-author1": "作者1",
+	"bs-bookshelfui-bookmetatag-author2": "作者2",
+	"bs-bookshelfui-bookmetatag-docummentidentifier": "文档ID",
+	"bs-bookshelfui-bookmetatag-docummenttype": "文档类型",
+	"bs-bookshelfui-bookmetatag-version": "版本",
+	"bs-bookshelfui-extjs-tooltip-copy": "复制",
+	"bookshelf": "书架",
+	"bookshelf-summary": "通用图书",
+	"prefs-bookshelfui": "书架特殊页面",
+	"bs-bookshelfui-prof-defaultview": "默认视图"
 }
