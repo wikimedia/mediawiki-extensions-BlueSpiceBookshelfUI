@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Patric Wirth"
+			"Patric Wirth",
+			"BaRaN6161 TURK"
 		]
 	},
 	"bs-bookshelfui-extension-description": "{{desc|name=BlueSpiceBookShelfUI}}",
@@ -49,7 +50,7 @@
 	"bs-bookshelfui-grouping-template-type-ns_book": "Header text for grouping the books by type \"ns_book\", which is handled as the default type\n{{Identical|General books}}",
 	"bs-bookshelfui-grouping-template-type-user_book": "Header text for grouping the books by type \"user_book\", which are the users own books\n{{Identical|Own books}}",
 	"bs-bookshelfui-book-type": "Label for the select box that allows to change the type of the book.\n{{Identical|Type of the book}}",
-	"bs-bookshelfui-empty-selection": "Generic error message when an action is executed but nothing was selected",
+	"bs-bookshelfui-empty-selection": "Generic error message when an action is executed but nothing was selected.\n{{Identical|None selected}}",
 	"apihelp-bs-bookshelf-manage-summary": "{{doc-apihelp-summary|bs-bookshelf-manage}}",
 	"bs-bookshelfui-dlg-choosecategory-label": "Label for the select form input in the dialog that allows mass insertion of pages into a book\n{{Identical|Category}}",
 	"bs-bookshelfui-dlg-type-label": "Label for the type of mass import select form input in the dialog that allows mass insertion of pages into a book\n{{Identical|Source}}",
