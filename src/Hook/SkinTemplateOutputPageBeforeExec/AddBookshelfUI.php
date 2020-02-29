@@ -20,7 +20,9 @@ class AddBookshelfUI extends SkinTemplateOutputPageBeforeExec {
 	}
 
 	protected function addGlobalActions() {
-		$bookManager = \SpecialPageFactory::getPage( 'BookshelfBookManager' );
+		$bookManager = \MediaWiki\MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->getPage( 'BookshelfBookManager' );
 		$this->mergeSkinDataArray(
 			SkinData::GLOBAL_ACTIONS,
 			[
