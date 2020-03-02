@@ -182,6 +182,11 @@ Ext.define('BS.BookshelfUI.panel.BookEditor', {
 					? matches[1]
 					: 'file.' + fileExtension;
 
+				//Even though the HTTP headers look fine in the network panel,
+				//`XMLHttpRequest::getResponseHeader` double UTF8 encodes the value.
+				//This is something like "decode_utf8".
+				filename = decodeURIComponent( escape( filename ) );
+
 				var blob = request.response;
 
 				 if (navigator.msSaveOrOpenBlob) {
