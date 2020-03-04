@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"bookshelfbookui": "Редактор книжок",
@@ -70,5 +71,29 @@
 	"bs-bookshelfui-bookmetatag-docummenttype": "Тип документа",
 	"bs-bookshelfui-bookmetatag-department": "Відділ",
 	"bs-bookshelfui-bookmetatag-version": "Версія",
-	"bs-bookshelfui-extjs-tooltip-copy": "Копіювати"
+	"bs-bookshelfui-extjs-tooltip-copy": "Копіювати",
+	"bs-bookshelfui-extension-description": "Вмикає BlueSpice для керування ієрархічними колекціями вікісторінок.",
+	"bs-bookshelfui-editor-no-title-provided": "Не вказано коректної назви книги",
+	"bs-bookshelfui-delete-book-text": "Ви справді хочете вилучити цю книгу? Теги «bookshelf» із пов'язаних вікісторінок <em>не</em> буде вилучено автоматично!",
+	"bs-bookshelfui-save-and-modify": "Зберегти і додати до кожної вікісторінки навігацію книгою",
+	"apihelp-bs-bookshelf-manage-summary": "Надає завдання для маніпуляції книгою.",
+	"bs-bookshelfui-extjs-tooltip-add-mass": "Масове додавання",
+	"bs-bookshelfui-dlg-addmass-title": "Масове додавання",
+	"apihelp-bs-bookshelf-page-collection-store-summary": "Надає колекцію сторінок, які можна масово додати до книги.",
+	"apihelp-bs-bookshelf-mass-add-page-store-summary": "Надає сторінки, які можна масово додати до книги.",
+	"right-bookshelfbookmanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookManager]]",
+	"action-bookshelfbookmanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookManager]]",
+	"right-bookshelfbookui-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookUI]]",
+	"action-bookshelfbookui-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookUI]]",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Кількість результатів, яку слід вивести",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-root": "Корінне значення, на основі якого слід вивести сторінки",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-type": "Тип джерела для масового додавання",
+	"bookshelf": "Книжкова полиця",
+	"bookshelf-summary": "Загальні книжки",
+	"prefs-bookshelfui": "Спеціальна сторінка «Книжкова полиця»",
+	"bs-bookshelfui-prof-defaultview": "Стандартний вигляд",
+	"bs-bookshelfui-prof-defaultview-grid": "Сітка",
+	"bs-bookshelfui-prof-defaultview-images": "Зображення",
+	"right-bookshelf-viewspecialpage": "доступ до спеціальної сторінки [[Special:Bookshelf]]",
+	"action-bookshelf-viewspecialpage": "доступ до спеціальної сторінки [[Special:Bookshelf]]"
 }

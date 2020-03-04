@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Amikeco"
+			"Amikeco",
+			"Okras"
 		]
 	},
 	"bs-bookshelfui-new-book-text": "Заголовок книги",
@@ -11,5 +12,11 @@
 	"bs-bookshelfui-bookmetatag-subtitle": "Подзаголовок",
 	"bs-bookshelfui-bookmetatag-author1": "Автор 1",
 	"bs-bookshelfui-bookmetatag-author2": "Автор 2",
-	"bs-bookshelfui-bookmetatag-version": "Версия"
+	"bs-bookshelfui-bookmetatag-version": "Версия",
+	"bs-bookshelfui-manager-title": "Заголовок",
+	"bs-bookshelfui-dlg-choosewikipage-title": "Вики-страница",
+	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Вики-страница",
+	"bs-bookshelfui-ctxmnu-delete": "Удалить из книги",
+	"bs-bookshelfui-dlg-choosecategory-label": "Категория",
+	"bs-bookshelfui-extjs-tooltip-copy": "Копировать"
 }

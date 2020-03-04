@@ -74,5 +74,7 @@
 	"bookshelf-summary": "Libros generales",
 	"bs-bookshelfui-prof-defaultview": "Vista predeterminada",
 	"bs-bookshelfui-prof-defaultview-grid": "Cuadrícula",
-	"bs-bookshelfui-prof-defaultview-images": "Imágenes"
+	"bs-bookshelfui-prof-defaultview-images": "Imágenes",
+	"bs-bookshelfui-new-book-title": "Crear un libro nuevo",
+	"bs-bookshelfui-dlg-tagsettings-title": "Configuración de etiqueta"
 }
