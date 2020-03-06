@@ -2,6 +2,7 @@ Ext.define( 'BS.BookshelfUI.dialog.NewPrompt', {
 	extend: 'MWExt.Dialog',
 	requires:['BS.form.SimpleSelectBox'],
 	title: mw.message('bs-bookshelfui-new-book-title').plain(),
+	closeAction: 'destroy',
 
 	//custom
 	bookTypes: [
