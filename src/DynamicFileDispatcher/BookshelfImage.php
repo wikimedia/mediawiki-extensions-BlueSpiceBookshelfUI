@@ -72,7 +72,7 @@ class BookshelfImage extends ArticlePreviewImage {
 	 */
 	protected function buildFallbackURL() {
 		$dfdUrlBuilder = \BlueSpice\Services::getInstance()
-			->getBSDynamicFileDispatcherUrlBuilder();
+			->getService( 'BSDynamicFileDispatcherUrlBuilder' );
 
 		$extendedToc = $this->pageHierarchyProvider->getExtendedTOCArray();
 		$firstPage = $extendedToc[0];
