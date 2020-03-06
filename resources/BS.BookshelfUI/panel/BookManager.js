@@ -5,9 +5,7 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 	],
 
 	initComponent: function() {
-
 		this.makeCopyButton();
-
 		this.colMainConf.columns = this.makeColumns();
 
 		this.groupingFeature = new Ext.grid.feature.Grouping({
@@ -71,7 +69,9 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 	},
 
 	onBtnAddClick: function( oButton, oEvent ) {
-		var dlgNew = new BS.BookshelfUI.dialog.NewPrompt();
+		var dlgNew = new BS.BookshelfUI.dialog.NewPrompt( {
+			id: this.makeId( 'dialog-new' )
+		} );
 		dlgNew.show();
 		this.callParent(arguments);
 	},
