@@ -103,7 +103,9 @@ class SpecialBookshelfBookUI extends ManagerBase {
 		$oData->bookTree = $oTree;
 		$oData->bookMeta = $oMeta;
 		$oData->bookMetaConfig = $oBookMetaConfig;
-		$oData->bookEdit = $oTitle->userCan( 'edit' );
+		$oData->bookEdit = \MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'edit', $this->getUser(), $oTitle );
 
 		Hooks::run( 'BSBookshelfBookUI', [ $this, $this->getOutput(), $oData ] );
 		$this->getOutput()->addJsConfigVars( 'bsBookshelfData', $oData );

@@ -46,7 +46,10 @@ class ApiBookshelfManage extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		if ( !$oTitle->userCan( 'delete' ) ) {
+		if ( !\MediaWiki\MediaWikiServices::getInstance()
+			->getPermissionManager()
+			->userCan( 'delete', $this->getUser(), $oTitle )
+		) {
 			$oResult->message = $oResult->errors['permission'] =
 				wfMessage( 'bs-bookshelfui-bookmanager-deletion-error-permission' )->text();
 			return $oResult;
