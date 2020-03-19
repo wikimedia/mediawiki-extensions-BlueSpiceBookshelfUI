@@ -55,15 +55,15 @@ class ApiBookshelfManage extends BSApiTasksBase {
 			return $oResult;
 		}
 
-		$oArticle = new Article( $oTitle );
+		$oPage = WikiPage::factory( $oTitle );
 		$error = '';
-		$oResult->success = $oArticle->doDeleteArticle(
+		$oResult->success = $oPage->doDeleteArticleReal(
 			wfMessage( 'bs-bookshelfui-bookmanager-deletion-reason' )->text(),
+			$this->getUser(),
 			false,
-				0,
-				true,
-				$error
-		);
+			null,
+			$error
+		)->isOK();
 
 		if ( $oResult->success == false ) {
 			$oResult->message =
