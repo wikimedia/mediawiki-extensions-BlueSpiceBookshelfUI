@@ -83,7 +83,7 @@
 	"apihelp-bs-bookshelf-mass-add-page-store-summary": "Надає сторінки, які можна масово додати до книги.",
 	"right-bookshelfbookmanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookManager]]",
 	"action-bookshelfbookmanager-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookManager]]",
-	"right-bookshelfbookui-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookUI]]",
+	"right-bookshelfbookui-viewspecialpage": "Доступ до спеціальної сторінки [[Special:BookshelfBookUI]]",
 	"action-bookshelfbookui-viewspecialpage": "доступ до спеціальної сторінки [[Special:BookshelfBookUI]]",
 	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Кількість результатів, яку слід вивести",
 	"apihelp-bs-bookshelf-mass-add-page-store-param-root": "Корінне значення, на основі якого слід вивести сторінки",
@@ -94,6 +94,6 @@
 	"bs-bookshelfui-prof-defaultview": "Стандартний вигляд",
 	"bs-bookshelfui-prof-defaultview-grid": "Сітка",
 	"bs-bookshelfui-prof-defaultview-images": "Зображення",
-	"right-bookshelf-viewspecialpage": "доступ до спеціальної сторінки [[Special:Bookshelf]]",
+	"right-bookshelf-viewspecialpage": "Доступ до спеціальної сторінки [[Special:Bookshelf]]",
 	"action-bookshelf-viewspecialpage": "доступ до спеціальної сторінки [[Special:Bookshelf]]"
 }
