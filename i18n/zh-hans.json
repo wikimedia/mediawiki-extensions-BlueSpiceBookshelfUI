@@ -65,5 +65,6 @@
 	"bookshelf": "书架",
 	"bookshelf-summary": "通用图书",
 	"prefs-bookshelfui": "书架特殊页面",
-	"bs-bookshelfui-prof-defaultview": "默认视图"
+	"bs-bookshelfui-prof-defaultview": "默认视图",
+	"bs-bookshelfui-prof-defaultview-images": "图片"
 }
