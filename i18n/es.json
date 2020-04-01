@@ -76,5 +76,8 @@
 	"bs-bookshelfui-prof-defaultview-grid": "Cuadrícula",
 	"bs-bookshelfui-prof-defaultview-images": "Imágenes",
 	"bs-bookshelfui-new-book-title": "Crear un libro nuevo",
-	"bs-bookshelfui-dlg-tagsettings-title": "Configuración de etiqueta"
+	"bs-bookshelfui-dlg-tagsettings-title": "Configuración de etiqueta",
+	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Página de wiki",
+	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "Título visualizado",
+	"bs-bookshelfui-ctxmnu-open": "Abrir página de wiki en una ventana nueva"
 }

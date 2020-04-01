@@ -43,7 +43,7 @@
 	"bs-bookshelfui-confirm-delete-title": "Bölümü kaldır",
 	"bs-bookshelfui-confirm-delete-text": "Seçilen bölümü gerçekten kaldırmak istiyor musunuz? Alt bölümler de kaldırılacaktır.",
 	"bs-bookshelfui-override-tag-title": "Vikisayfası derneklerini değiştir",
-	"bs-bookshelfui-override-tag-text": "Wiki sayfa içine kitap ilişkilendirmeleri (<code>&lt;bs:bookshelf /&gt;</code>) eklemek veya güncellemek ister misiniz? Wiki sayfanın yeni bir sürümü oluşturulacak.",
+	"bs-bookshelfui-override-tag-text": "Vikisayfa içine kitap ilişkilendirmeleri (<code>&lt;bs:bookshelf /&gt;</code>) eklemek veya güncellemek ister misiniz? Vikisayfanın yeni bir sürümü oluşturulacak.",
 	"bs-bookshelfui-nothingtoexport-text": "Seçiminiz boş",
 	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|Bir kitap|$1 kitap}})",
 	"bs-bookshelfui-grouping-template-type-ns_book": "Genel kitaplar",

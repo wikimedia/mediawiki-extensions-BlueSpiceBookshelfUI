@@ -5,7 +5,9 @@
 			"VulpesVulpes825",
 			"Wenyuan Liu",
 			"Dimension",
-			"铁桶"
+			"铁桶",
+			"A Chinese Wikipedian",
+			"500000000006城"
 		]
 	},
 	"bs-bookshelfui-manager-title": "标题",
@@ -61,5 +63,18 @@
 	"bookshelf": "书架",
 	"bookshelf-summary": "通用图书",
 	"prefs-bookshelfui": "书架特殊页面",
-	"bs-bookshelfui-prof-defaultview": "默认视图"
+	"bs-bookshelfui-prof-defaultview": "默认视图",
+	"bs-bookshelfui-bookui-savingprogress-text": "请等待，直到书保存在服务器上",
+	"bs-bookshelfui-manager-deletionsuccess-text": "这本书已成功删除",
+	"bs-bookshelfui-manager-deletionfailure-title": "删除时出错！",
+	"bs-bookshelfui-grouping-template-type-ns_book": "一般图书",
+	"bs-bookshelfui-book-type": "书籍类别",
+	"bs-bookshelfui-empty-selection": "未选择",
+	"bs-bookshelfui-flyout-title": "图书列表",
+	"bs-bookshelfui-flyout-intro": "在这里你可以看到所有可用的书。要添加一本新书，请到[[Special:Bookmanager|book manager]]。",
+	"bs-bookshelfui-export-book-text": "正在创建图书，请稍候。",
+	"bs-bookshelfui-bookmanager-deletion-reason": "被图书管理员删除",
+	"bs-bookshelfui-bookmanager-deletion-error-pageid": "无法找到提供的文章。",
+	"bs-bookshelfui-bookmetatag-department": "部门",
+	"bs-bookshelfui-prof-defaultview-images": "图片"
 }
