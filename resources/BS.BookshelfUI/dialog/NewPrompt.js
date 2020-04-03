@@ -20,6 +20,7 @@ Ext.define( 'BS.BookshelfUI.dialog.NewPrompt', {
 		}
 
 		this.tfBookTitle = new Ext.form.field.Text({
+			id: this.makeId( 'input-booktitle' ),
 			fieldLabel: mw.message('bs-bookshelfui-new-book-text').plain()
 		});
 		this.cbBookType = new BS.form.SimpleSelectBox({
