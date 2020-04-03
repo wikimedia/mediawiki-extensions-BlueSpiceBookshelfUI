@@ -240,7 +240,9 @@ Ext.define('BS.BookshelfUI.panel.BookEditor', {
 		var me = this;
 
 		if( !this.dlgBatchActions ) {
-			this.dlgBatchActions = new BS.dialog.BatchActions();
+			this.dlgBatchActions = new BS.dialog.BatchActions( {
+				id: this.makeId( 'dialog-batchactions-save' )
+			} );
 			this.dlgBatchActions.on( 'ok', this.onDlgBatchActionsOK, this );
 		}
 
@@ -334,7 +336,9 @@ Ext.define('BS.BookshelfUI.panel.BookEditor', {
 
 	onBtnAddClick: function( oButton, oEvent ) {
 		if( !this.dlgAddArticle ) {
-			this.dlgAddArticle = new BS.BookshelfUI.dialog.WikiPageNode();
+			this.dlgAddArticle = new BS.BookshelfUI.dialog.WikiPageNode( {
+				id: this.makeId( 'add-wikipage-node-dialog' )
+			} );
 			this.dlgAddArticle.on( 'ok', this.onDlgAddArticleOk, this );
 		}
 		this.dlgAddArticle.show();
