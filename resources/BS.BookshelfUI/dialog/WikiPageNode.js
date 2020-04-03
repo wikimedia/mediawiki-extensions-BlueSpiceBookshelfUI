@@ -8,6 +8,7 @@ Ext.define('BS.BookshelfUI.dialog.WikiPageNode', {
 	defaultNamespaceId: 0,
 	makeItems: function() {
 		this.cbTitle = new BS.form.field.TitleCombo({
+			id: this.makeId( 'input-pagetitle' ),
 			fieldLabel: mw.message('bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel').plain(),
 			labelAlign: 'right'
 		});
@@ -74,6 +75,11 @@ Ext.define('BS.BookshelfUI.dialog.WikiPageNode', {
 
 	onBtnOKClick: function() {
 		var record = this.cbTitle.getValue();
+		if( !record ) {
+			record = this.cbTitle.getStore().getAt(0);
+			this.cbTitle.select( record );
+		}
+
 		if( !record || record.get( 'page_title' ).trim() === '' ) {
 			bs.util.alert(
 				'bs-bui-wikipagenodedialog-alert-empty',
