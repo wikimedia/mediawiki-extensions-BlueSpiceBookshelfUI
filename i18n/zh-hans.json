@@ -20,6 +20,7 @@
 	"bs-bookshelfui-delete-book-title": "删除图书",
 	"bs-bookshelfui-export-selection": "导出选项",
 	"bs-bookshelfui-edit-source": "编辑来源Wiki页面",
+	"bs-bookshelfui-open-source": "显示源wiki页面",
 	"bs-bookshelfui-bookui-savingprogress-title": "正在保存图书",
 	"bs-bookshelfui-bookui-savingprogress-text": "请等待，直到书保存在服务器上",
 	"bs-bookshelfui-manager-title": "标题",
