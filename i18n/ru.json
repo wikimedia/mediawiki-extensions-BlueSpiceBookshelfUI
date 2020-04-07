@@ -2,15 +2,24 @@
 	"@metadata": {
 		"authors": [
 			"Amikeco",
+			"Meerrahtar",
 			"Okras"
 		]
 	},
+	"bookshelfbookui": "Редактор книг",
+	"bookshelfbookmanager": "Управление книгами",
+	"bs-bookshelfui-widget-editor-link-text": "Редактировать эту книгу",
+	"bs-bookshelfui-new-book-title": "Создать новую книгу",
 	"bs-bookshelfui-new-book-text": "Заголовок книги",
 	"bs-bookshelfui-delete-book-title": "Удалить книгу",
 	"bs-bookshelfui-manager-title": "Заголовок",
 	"bs-bookshelfui-dlg-choosewikipage-title": "Вики-страница",
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Вики-страница",
+	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "Отображаемый заголовок",
+	"bs-bookshelfui-ctxmnu-open": "Открыть викистраницу в новом окне",
+	"bs-bookshelfui-ctxmnu-edit": "Изменить отображаемый заголовок",
 	"bs-bookshelfui-ctxmnu-delete": "Удалить из книги",
+	"bs-bookshelfui-dlg-metadata-title": "Метаданные",
 	"bs-bookshelfui-dlg-choosecategory-label": "Категория",
 	"bs-bookshelfui-dlg-type-label": "Источник",
 	"bs-bookshelfui-bookmetatag-title": "Заголовок",
@@ -18,5 +27,7 @@
 	"bs-bookshelfui-bookmetatag-author1": "Автор 1",
 	"bs-bookshelfui-bookmetatag-author2": "Автор 2",
 	"bs-bookshelfui-bookmetatag-version": "Версия",
-	"bs-bookshelfui-extjs-tooltip-copy": "Копировать"
+	"bs-bookshelfui-extjs-tooltip-copy": "Копировать",
+	"bs-bookshelfui-prof-defaultview-grid": "Сетка",
+	"bs-bookshelfui-prof-defaultview-images": "Изображения"
 }

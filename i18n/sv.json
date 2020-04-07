@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix",
 			"Mjälten",
-			"Technic2"
+			"Technic2",
+			"WikiPhoenix"
 		]
 	},
 	"bs-bookshelfui-extension-description": "Låter BlueSpice behandla hierarkiske samlingar av wikisidor.",
