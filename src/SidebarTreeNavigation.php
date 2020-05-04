@@ -194,7 +194,7 @@ class SidebarTreeNavigation extends \BSSkinTreeNavigation {
 	 */
 	protected function makePlainTextNodeText( $node ) {
 		return \Html::element(
-			'a',
+			'span',
 			[
 				'level' => $node->articleNumber,
 				'name' => $node->articleNumber,
