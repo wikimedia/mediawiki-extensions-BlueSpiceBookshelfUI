@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robert Vogel <vogel@hallowelt.biz>",
 			"Hikemaniac",
-			"Mglaser"
+			"Mglaser",
+			"Robert Vogel <vogel@hallowelt.biz>"
 		]
 	},
 	"bs-bookshelfui-extension-description": "Ermöglicht das Verwalten von hierarchisch gegliederten Seitensammlungen.",

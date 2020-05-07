@@ -66,7 +66,7 @@
 	"bs-bookshelfui-book-title-link-edit-text": "Kitabı düzenle",
 	"bs-bookshelfui-export-book-text": "Lütfen kitap oluşturulurken bekleyin.",
 	"bs-bookshelfui-bookmanager-deletion-reason": "BookManager tarafından silindi",
-	"bs-bookshelfui-bookmanager-deletion-error-pageid": "Sağlanan makale bulunamadı.",
+	"bs-bookshelfui-bookmanager-deletion-error-pageid": "Sağlanan madde bulunamadı.",
 	"bs-bookshelfui-bookmanager-deletion-error-permission": "Bu eylemi gerçekleştirmek için yeterli izniniz yok.",
 	"bs-bookshelfui-bookmanager-deletion-error-unkown": "Bilinmeyen bir hata oluştu. Lütfen yöneticinize başvurun.",
 	"bs-bookshelfui-bookmetatag-title": "Başlık",

@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"沈澄心",
+			"500000000006城",
+			"A Chinese Wikipedian",
+			"Dimension",
 			"VulpesVulpes825",
 			"Wenyuan Liu",
-			"Dimension",
-			"铁桶",
-			"A Chinese Wikipedian",
-			"500000000006城"
+			"沈澄心",
+			"铁桶"
 		]
 	},
 	"bs-bookshelfui-manager-title": "标题",
@@ -76,5 +76,15 @@
 	"bs-bookshelfui-bookmanager-deletion-reason": "被图书管理员删除",
 	"bs-bookshelfui-bookmanager-deletion-error-pageid": "无法找到提供的文章。",
 	"bs-bookshelfui-bookmetatag-department": "部门",
-	"bs-bookshelfui-prof-defaultview-images": "图片"
+	"bs-bookshelfui-prof-defaultview-images": "图片",
+	"bs-bookshelfui-open-source": "显示源wiki页面",
+	"apihelp-bs-bookshelf-manage-summary": "为书本操作提供任务。",
+	"bs-bookshelfui-bookmanager-deletion-error-unkown": "发生了一个未知的错误。请联系您的管理员。",
+	"apihelp-bs-bookshelf-page-collection-store-summary": "提供了一个可以通过批量添加到书中的页面集合。",
+	"apihelp-bs-bookshelf-mass-add-page-store-summary": "提供了可以通过批量添加到书中的页面。",
+	"right-bookshelfbookmanager-viewspecialpage": "访问特殊页面 [[Special:BookshelfBookManager]]",
+	"action-bookshelfbookmanager-viewspecialpage": "访问特殊页面 [[Special:BookshelfBookManager]]",
+	"right-bookshelfbookui-viewspecialpage": "访问特殊页面 [[Special:BookshelfBookUI]]",
+	"action-bookshelfbookui-viewspecialpage": "访问特殊页面 [[Special:BookshelfBookUI]]",
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "返回的结果数"
 }

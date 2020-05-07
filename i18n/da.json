@@ -38,5 +38,9 @@
 	"bookshelf": "Boghylde",
 	"bookshelf-summary": "Generelle bøger",
 	"bs-bookshelfui-prof-defaultview": "Standardvisning",
-	"bs-bookshelfui-prof-defaultview-images": "Billeder"
+	"bs-bookshelfui-prof-defaultview-images": "Billeder",
+	"bs-bookshelfui-manager-deletionfailure-title": "Fejl ved sletning!",
+	"bs-bookshelfui-dlg-choosewikipage-title": "Wikiside",
+	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Wikiside",
+	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "Visningstitel"
 }

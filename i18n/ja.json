@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Suchichi02",
-			"Aefgh39622"
+			"Aefgh39622",
+			"Omotecho",
+			"Suchichi02"
 		]
 	},
 	"bs-bookshelfui-dlg-choosecategory-label": "カテゴリ",
@@ -22,7 +23,7 @@
 	"bs-bookshelfui-manager-deletionsuccess-title": "正常に削除されました!",
 	"bs-bookshelfui-manager-deletionsuccess-text": "書籍は正常に削除されました。",
 	"bs-bookshelfui-manager-deletionfailure-title": "削除時にエラーが発生しました!",
-	"bs-bookshelfui-manager-deletionfailure-text": "書籍を削除しようとしたときに次のエラーが発生しました: $ 1",
+	"bs-bookshelfui-manager-deletionfailure-text": "書籍を削除しようとしたときに次のエラーが発生しました: $1",
 	"bs-bookshelfui-dlg-choosewikipage-title": "ウィキページ",
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "ウィキページ",
 	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "表示されるタイトル",

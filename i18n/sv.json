@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix",
 			"Mjälten",
-			"Technic2"
+			"Technic2",
+			"WikiPhoenix"
 		]
 	},
 	"bs-bookshelfui-delete-book-title": "Radera bok",
