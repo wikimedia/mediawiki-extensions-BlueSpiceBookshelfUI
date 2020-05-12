@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amir1arch",
 			"FarsiNevis"
 		]
 	},
@@ -57,7 +58,7 @@
 	"bs-bookshelfui-type-pagecollection": "مجموعهٔ صفحه‌ها",
 	"bs-bookshelfui-nav-link-title-all-books": "کتاب‌های عمومی",
 	"bs-bookshelfui-flyout-title": "فهرست کتاب‌ها",
-	"bs-bookshelfui-flyout-intro": "در این‌جا می‌توانید همهٔ کتاب‌های موجود را ببینید. برای افزودن کتابی جدید، به صفحهٔ [[ویژه:مدیر کتاب]] بروید.",
+	"bs-bookshelfui-flyout-intro": "در این‌جا می‌توانید همهٔ کتاب‌های موجود را ببینید. برای افزودن کتابی جدید، به صفحهٔ [[Special:Bookmanager|book manager]] بروید.",
 	"bs-bookshelfui-book-title-link-edit": "ویرایش کتاب",
 	"bs-bookshelfui-book-title-link-edit-text": "ویرایش کتاب",
 	"bs-bookshelfui-export-book-text": "لطفاً صبر کنید تا کتاب ایجاد شود.",
@@ -76,8 +77,8 @@
 	"bs-bookshelfui-extjs-tooltip-copy": "رونوشت",
 	"apihelp-bs-bookshelf-page-collection-store-summary": "مجموعهٔ صفحه‌هایی برای انبوه‌افزودن به یک کتاب، فراهم می‌آورد.",
 	"apihelp-bs-bookshelf-mass-add-page-store-summary": "صفحه‌هایی برای انبوه‌افزودن به یک کتاب، فراهم می‌آورد.",
-	"right-bookshelfbookmanager-viewspecialpage": "دست‌یابی به ویژه‌صفحهٔ [[ویژه:مدیر قفسه کتاب]]",
-	"action-bookshelfbookmanager-viewspecialpage": "دست‌یابی به ویژه‌صفحهٔ [[ویژه:مدیر قفسه کتاب]]",
+	"right-bookshelfbookmanager-viewspecialpage": "دست‌یابی به ویژه‌صفحهٔ [[Special:BookshelfBookManager]]",
+	"action-bookshelfbookmanager-viewspecialpage": "دست‌یابی به ویژه‌صفحهٔ[[Special:BookshelfBookManager]]",
 	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "تعداد نتایج برای نمایش",
 	"apihelp-bs-bookshelf-mass-add-page-store-param-type": "نوع مبدأ برای انبوه‌افزودن",
 	"bookshelf": "قفسه",
