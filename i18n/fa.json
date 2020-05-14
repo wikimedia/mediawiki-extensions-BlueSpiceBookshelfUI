@@ -78,7 +78,7 @@
 	"apihelp-bs-bookshelf-page-collection-store-summary": "مجموعهٔ صفحه‌هایی برای انبوه‌افزودن به یک کتاب، فراهم می‌آورد.",
 	"apihelp-bs-bookshelf-mass-add-page-store-summary": "صفحه‌هایی برای انبوه‌افزودن به یک کتاب، فراهم می‌آورد.",
 	"right-bookshelfbookmanager-viewspecialpage": "دست‌یابی به ویژه‌صفحهٔ [[Special:BookshelfBookManager]]",
-	"action-bookshelfbookmanager-viewspecialpage": "دست‌یابی به ویژه‌صفحهٔ[[Special:BookshelfBookManager]]",
+	"action-bookshelfbookmanager-viewspecialpage": "دست‌یابی به ویژه‌صفحهٔ [[Special:BookshelfBookManager]]",
 	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "تعداد نتایج برای نمایش",
 	"apihelp-bs-bookshelf-mass-add-page-store-param-type": "نوع مبدأ برای انبوه‌افزودن",
 	"bookshelf": "قفسه",
