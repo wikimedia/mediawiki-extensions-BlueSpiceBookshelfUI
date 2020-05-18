@@ -3,6 +3,7 @@
 		"authors": [
 			"Aefgh39622",
 			"Omotecho",
+			"Shirayuki",
 			"Suchichi02"
 		]
 	},
@@ -46,7 +47,7 @@
 	"bs-bookshelfui-extjs-tooltip-add-mass": "大量追加",
 	"bs-bookshelfui-dlg-addmass-title": "大量追加",
 	"bs-bookshelfui-type-category": "カテゴリのすべてのページ",
-	"bs-bookshelfui-type-subpages": "ページのすべてのサブページ",
+	"bs-bookshelfui-type-subpages": "ページのすべての下位ページ",
 	"bs-bookshelfui-flyout-title": "書籍の一覧",
 	"bs-bookshelfui-book-title-link-edit": "書籍を編集",
 	"bs-bookshelfui-book-title-link-edit-text": "書籍を編集",
