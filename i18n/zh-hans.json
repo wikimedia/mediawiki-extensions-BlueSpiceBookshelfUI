@@ -6,6 +6,7 @@
 			"Dimension",
 			"VulpesVulpes825",
 			"Wenyuan Liu",
+			"XinuGod",
 			"沈澄心",
 			"铁桶"
 		]
@@ -86,5 +87,6 @@
 	"bookshelf-summary": "通用图书",
 	"prefs-bookshelfui": "书架特殊页面",
 	"bs-bookshelfui-prof-defaultview": "默认视图",
-	"bs-bookshelfui-prof-defaultview-images": "图片"
+	"bs-bookshelfui-prof-defaultview-images": "图片",
+	"right-bookshelf-viewspecialpage": "访问特殊页面 [[Special:Bookshelf]]"
 }
