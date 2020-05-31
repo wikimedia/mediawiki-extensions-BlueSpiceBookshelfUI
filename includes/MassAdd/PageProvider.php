@@ -31,7 +31,7 @@ class PageProvider {
 	}
 
 	protected function __construct() {
- }
+	}
 
 	/**
 	 * Sets the type of collection to retrieve
