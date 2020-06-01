@@ -7,6 +7,7 @@
 			"VulpesVulpes825",
 			"Wenyuan Liu",
 			"XinuGod",
+			"列维劳德",
 			"沈澄心",
 			"铁桶"
 		]
@@ -88,5 +89,6 @@
 	"prefs-bookshelfui": "书架特殊页面",
 	"bs-bookshelfui-prof-defaultview": "默认视图",
 	"bs-bookshelfui-prof-defaultview-images": "图片",
-	"right-bookshelf-viewspecialpage": "访问特殊页面 [[Special:Bookshelf]]"
+	"right-bookshelf-viewspecialpage": "访问特殊页面 [[Special:Bookshelf]]",
+	"action-bookshelf-viewspecialpage": "访问特殊页面 [[Special:Bookshelf]]"
 }

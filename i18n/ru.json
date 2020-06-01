@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amikeco",
+			"Diman Russkov",
 			"Meerrahtar",
 			"Okras",
 			"Pacha Tchernof"
@@ -28,6 +29,7 @@
 	"bs-bookshelfui-ctxmnu-delete": "Удалить из книги",
 	"bs-bookshelfui-ctxmnu-tag-edit": "Изменить настройки",
 	"bs-bookshelfui-dlg-metadata-title": "Метаданные",
+	"bs-bookshelfui-dlg-copy-title": "Копировать \"$1\"",
 	"bs-bookshelfui-dlg-copy-name-addition": "(копия)",
 	"bs-bookshelfui-dlg-choosecategory-label": "Категория",
 	"bs-bookshelfui-dlg-type-label": "Источник",
