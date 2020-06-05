@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Amikeco",
+			"Diman Russkov",
 			"Meerrahtar",
 			"Okras",
 			"Pacha Tchernof"
@@ -36,5 +37,10 @@
 	"bs-bookshelfui-dlg-metadata-title": "Метаданные",
 	"bs-bookshelfui-dlg-copy-name-addition": "(копия)",
 	"bs-bookshelfui-prof-defaultview-grid": "Сетка",
-	"bs-bookshelfui-prof-defaultview-images": "Изображения"
+	"bs-bookshelfui-prof-defaultview-images": "Изображения",
+	"bs-bookshelfui-bookui-savingprogress-title": "Сохранение книги",
+	"bs-bookshelfui-manager-deletingprogress-text": "Удаление выбранной книги",
+	"bs-bookshelfui-dlg-copy-title": "Копировать \"$1\"",
+	"bs-bookshelfui-flyout-title": "Список книг",
+	"bookshelf": "Книжная полка"
 }

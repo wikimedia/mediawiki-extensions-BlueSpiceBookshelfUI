@@ -6,6 +6,8 @@
 			"Dimension",
 			"VulpesVulpes825",
 			"Wenyuan Liu",
+			"XinuGod",
+			"列维劳德",
 			"沈澄心",
 			"铁桶"
 		]
@@ -86,5 +88,7 @@
 	"action-bookshelfbookmanager-viewspecialpage": "访问特殊页面 [[Special:BookshelfBookManager]]",
 	"right-bookshelfbookui-viewspecialpage": "访问特殊页面 [[Special:BookshelfBookUI]]",
 	"action-bookshelfbookui-viewspecialpage": "访问特殊页面 [[Special:BookshelfBookUI]]",
-	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "返回的结果数"
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "返回的结果数",
+	"right-bookshelf-viewspecialpage": "访问特殊页面 [[Special:Bookshelf]]",
+	"action-bookshelf-viewspecialpage": "访问特殊页面 [[Special:Bookshelf]]"
 }
