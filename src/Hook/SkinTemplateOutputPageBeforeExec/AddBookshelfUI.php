@@ -23,6 +23,14 @@ class AddBookshelfUI extends SkinTemplateOutputPageBeforeExec {
 		$bookManager = \MediaWiki\MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
 			->getPage( 'BookshelfBookManager' );
+
+		if ( !$this->getContext()
+			->getUser()
+			->isAllowed( $bookManager->getRestriction() )
+		) {
+			return true;
+		}
+
 		$this->mergeSkinDataArray(
 			SkinData::GLOBAL_ACTIONS,
 			[
