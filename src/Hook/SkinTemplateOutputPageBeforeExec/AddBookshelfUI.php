@@ -21,6 +21,14 @@ class AddBookshelfUI extends SkinTemplateOutputPageBeforeExec {
 
 	protected function addGlobalActions() {
 		$bookManager = \SpecialPageFactory::getPage( 'BookshelfBookManager' );
+
+		if ( !$this->getContext()
+			->getUser()
+			->isAllowed( $bookManager->getRestriction() )
+		) {
+			return true;
+		}
+
 		$this->mergeSkinDataArray(
 			SkinData::GLOBAL_ACTIONS,
 			[
