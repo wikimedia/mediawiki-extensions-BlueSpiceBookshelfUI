@@ -97,13 +97,11 @@ Ext.define( 'BS.BookshelfUI.panel.BookManager', {
 		this.dlgCopy.show();
 	},
 
-	onGrdMainRowClick: function( oSender, iRowIndex, oEvent ) {
-		this.callParent(arguments);
-		this.btnCopy.enable();
-
-		var selectedRecords = this.grdMain.getSelectionModel().getSelection();
-		if( selectedRecords.length > 1 ) {
-			this.btnCopy.disable();
+	onGrdMainSelectionChange: function( sender, records, opts ) {
+		this.callParent( arguments );
+		this.btnCopy.disable();
+		if( records && records.length > 0 && records.length < 2 ) {
+			this.btnCopy.enable();
 		}
 	},
 
