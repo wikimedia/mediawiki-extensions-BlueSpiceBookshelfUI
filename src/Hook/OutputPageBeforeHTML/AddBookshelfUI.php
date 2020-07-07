@@ -1,16 +1,12 @@
 <?php
 
-namespace BlueSpice\BookshelfUI\Hook\SkinTemplateOutputPageBeforeExec;
+namespace BlueSpice\BookshelfUI\Hook\OutputPageBeforeHTML;
 
 use BlueSpice\BookshelfUI\Panel\BookNav;
-use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
+use BlueSpice\Hook\OutputPageBeforeHTML;
 use BlueSpice\SkinData;
 
-class AddBookshelfUI extends SkinTemplateOutputPageBeforeExec {
-
-	protected function skipProcessing() {
-		return false;
-	}
+class AddBookshelfUI extends OutputPageBeforeHTML {
 
 	protected function doProcess() {
 		$this->addSiteNavTab();

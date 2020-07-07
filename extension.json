@@ -251,7 +251,7 @@
 		"remoteExtPath": "BlueSpiceBookshelfUI/resources"
 	},
 	"Hooks": {
-		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\BookshelfUI\\Hook\\SkinTemplateOutputPageBeforeExec\\AddBookshelfUI::callback",
+		"OutputPageBeforeHTML": "\\BlueSpice\\BookshelfUI\\Hook\\OutputPageBeforeHTML\\AddBookshelfUI::callback",
 		"BeforePageDisplay": "\\BlueSpice\\BookshelfUI\\Hook\\BeforePageDisplay\\AddResources::callback",
 		"GetPreferences": "\\BlueSpice\\BookshelfUI\\Hook\\GetPreferences\\BookshelfDefaultView::callback"
 	},
