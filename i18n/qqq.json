@@ -31,7 +31,7 @@
 	"bs-bookshelfui-dlg-choosewikipage-title": "Title of the dialog that allows selecting a page",
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Label for the select field, that allows selecting a page",
 	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "Label for the text form field that allows setting a display title for the selected page",
-	"bs-bookshelfui-ctxmnu-open": "Context menu entry that opens the page in a new window.\n{{Identical|Open page in new window}}",
+	"bs-bookshelfui-ctxmnu-open": "Context menu entry that opens the page in a new window.",
 	"bs-bookshelfui-ctxmnu-edit": "Context menu entry that allows editing of the display title of the selected page.\n{{Identical|Edit display title}}",
 	"bs-bookshelfui-ctxmnu-delete": "Context menu entry that allows editing of the display title of the selected page.\n{{Identical|Delete from book}}",
 	"bs-bookshelfui-ctxmnu-tag-edit": "Context menu entry that allows editing the tag settings.",
