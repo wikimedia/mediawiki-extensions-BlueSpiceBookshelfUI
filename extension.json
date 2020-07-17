@@ -69,6 +69,12 @@
 		"BookShelfUIDefaultCoverImage": {
 			"value": "resources/images/assets/coverimage/dummy.png",
 			"path": true
+		},
+		"BookShelfUIShowChapterNavigationPagerBeforeContent": {
+			"value": false
+		},
+		"BookShelfUIShowChapterNavigationPagerAfterContent": {
+			"value": false
 		}
 	},
 	"SpecialPages": {
@@ -128,6 +134,21 @@
 			"dependencies": [
 				"mediawiki.api.edit",
 				"ext.bluespice"
+			]
+		},
+		"ext.bluespice.bookshelfUI.pager.navigation.styles": {
+			"styles": [
+				"bluespice.bookshelfUI.pager.navigation.less"
+			]
+		},
+		"ext.bluespice.bookshelfUI.pager.before-content.styles": {
+			"styles": [
+				"bluespice.bookshelfUI.pager.beforeContent.less"
+			]
+		},
+		"ext.bluespice.bookshelfUI.pager.after-content.styles": {
+			"styles": [
+				"bluespice.bookshelfUI.pager.afterContent.less"
 			]
 		},
 		"ext.bluespice.bookshelfUI.navigationTab.styles": {
@@ -247,7 +268,10 @@
 		"remoteExtPath": "BlueSpiceBookshelfUI/resources"
 	},
 	"Hooks": {
-		"SkinTemplateOutputPageBeforeExec": "\\BlueSpice\\BookshelfUI\\Hook\\SkinTemplateOutputPageBeforeExec\\AddBookshelfUI::callback",
+		"SkinTemplateOutputPageBeforeExec": [
+			"\\BlueSpice\\BookshelfUI\\Hook\\SkinTemplateOutputPageBeforeExec\\AddChapterPager::callback",
+			"\\BlueSpice\\BookshelfUI\\Hook\\SkinTemplateOutputPageBeforeExec\\AddBookshelfUI::callback"
+		],
 		"BeforePageDisplay": "\\BlueSpice\\BookshelfUI\\Hook\\BeforePageDisplay\\AddResources::callback"
 	},
 	"manifest_version": 2,
