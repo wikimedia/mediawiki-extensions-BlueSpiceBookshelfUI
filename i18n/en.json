@@ -95,5 +95,7 @@
 	"bs-bookshelfui-prof-defaultview-grid": "Grid",
 	"bs-bookshelfui-prof-defaultview-images": "Images",
 	"right-bookshelf-viewspecialpage": "Access the special page [[Special:Bookshelf]]",
-	"action-bookshelf-viewspecialpage": "access the special page [[Special:Bookshelf]]"
+	"action-bookshelf-viewspecialpage": "access the special page [[Special:Bookshelf]]",
+	"bs-bookshelfui-chapterpager-previous": "Previous",
+	"bs-bookshelfui-chapterpager-next": "Next"
 }

@@ -94,5 +94,7 @@
 	"bs-bookshelfui-prof-defaultview-grid": "Grid view settings name",
 	"bs-bookshelfui-prof-defaultview-images": "Images view settings name",
 	"right-bookshelf-viewspecialpage": "{{doc-right|bookshelf-viewspecialpage}}",
-	"action-bookshelf-viewspecialpage": "{{doc-action|bookshelf-viewspecialpage}}"
+	"action-bookshelf-viewspecialpage": "{{doc-action|bookshelf-viewspecialpage}}",
+	"bs-bookshelfui-chapterpager-previous": "Label for chapterpager to poen previous book page",
+	"bs-bookshelfui-chapterpager-next": "Label for chapterpager to poen next book page"
 }
