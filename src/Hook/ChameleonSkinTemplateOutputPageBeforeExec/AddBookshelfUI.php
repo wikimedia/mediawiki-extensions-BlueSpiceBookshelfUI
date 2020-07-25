@@ -1,12 +1,12 @@
 <?php
 
-namespace BlueSpice\BookshelfUI\Hook\OutputPageBeforeHTML;
+namespace BlueSpice\BookshelfUI\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 
 use BlueSpice\BookshelfUI\Panel\BookNav;
-use BlueSpice\Hook\OutputPageBeforeHTML;
+use BlueSpice\Calumma\Hook\ChameleonSkinTemplateOutputPageBeforeExec;
 use BlueSpice\SkinData;
 
-class AddBookshelfUI extends OutputPageBeforeHTML {
+class AddBookshelfUI extends ChameleonSkinTemplateOutputPageBeforeExec {
 
 	protected function doProcess() {
 		$this->addSiteNavTab();
