@@ -20,10 +20,11 @@ class AddBookshelfUI extends OutputPageBeforeHTML {
 			->getSpecialPageFactory()
 			->getPage( 'BookshelfBookManager' );
 
-		if ( !$this->getContext()
-			->getUser()
-			->isAllowed( $bookManager->getRestriction() )
-		) {
+		$isAllowed = $this->getServices()->getPermissionManager()->userHasRight(
+			$this->getContext()->getUser(),
+			$bookManager->getRestriction()
+		);
+		if ( !$isAllowed ) {
 			return true;
 		}
 
