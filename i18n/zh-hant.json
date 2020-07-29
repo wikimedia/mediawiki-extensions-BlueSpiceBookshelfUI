@@ -94,5 +94,7 @@
 	"bs-bookshelfui-prof-defaultview-grid": "網格",
 	"bs-bookshelfui-prof-defaultview-images": "圖片",
 	"right-bookshelf-viewspecialpage": "存取特殊頁面 [[Special:Bookshelf]]",
-	"action-bookshelf-viewspecialpage": "存取特殊頁面 [[Special:Bookshelf]]"
+	"action-bookshelf-viewspecialpage": "存取特殊頁面 [[Special:Bookshelf]]",
+	"bs-bookshelfui-chapterpager-previous": "上一頁",
+	"bs-bookshelfui-chapterpager-next": "下一頁"
 }

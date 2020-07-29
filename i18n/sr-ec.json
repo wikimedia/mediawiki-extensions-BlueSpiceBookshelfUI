@@ -28,5 +28,7 @@
 	"bs-bookshelfui-bookmanager-deletion-error-permission": "Немате одговарајуће дозволе за извршавање ове радње.",
 	"bs-bookshelfui-bookmetatag-author1": "Аутор 1",
 	"bs-bookshelfui-bookmetatag-version": "Верзија",
-	"bs-bookshelfui-extjs-tooltip-copy": "Копирај"
+	"bs-bookshelfui-extjs-tooltip-copy": "Копирај",
+	"bs-bookshelfui-chapterpager-previous": "Претходна",
+	"bs-bookshelfui-chapterpager-next": "Следећа"
 }
