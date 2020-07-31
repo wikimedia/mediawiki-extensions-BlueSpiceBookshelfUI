@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ديفيد"
+			"ديفيد",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-bookshelfui-extension-description": "يمكن BlueSpice لإدارة وتصدير مجموعات صفحات الويكي هرميا.",
@@ -94,5 +95,7 @@
 	"bs-bookshelfui-prof-defaultview-grid": "شبكة",
 	"bs-bookshelfui-prof-defaultview-images": "الصور",
 	"right-bookshelf-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:Bookshelf]]",
-	"action-bookshelf-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:Bookshelf]]"
+	"action-bookshelf-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:Bookshelf]]",
+	"bs-bookshelfui-chapterpager-previous": "السابق",
+	"bs-bookshelfui-chapterpager-next": "التالي"
 }
