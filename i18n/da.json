@@ -44,5 +44,7 @@
 	"bookshelf": "Boghylde",
 	"bookshelf-summary": "Generelle bøger",
 	"bs-bookshelfui-prof-defaultview": "Standardvisning",
-	"bs-bookshelfui-prof-defaultview-images": "Billeder"
+	"bs-bookshelfui-prof-defaultview-images": "Billeder",
+	"bs-bookshelfui-chapterpager-previous": "Forrige",
+	"bs-bookshelfui-chapterpager-next": "Næste"
 }

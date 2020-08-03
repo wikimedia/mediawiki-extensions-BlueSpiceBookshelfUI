@@ -67,5 +67,7 @@
 	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "반환할 결과 수",
 	"bookshelf": "책장",
 	"bs-bookshelfui-prof-defaultview-grid": "그리드",
-	"bs-bookshelfui-prof-defaultview-images": "이미지"
+	"bs-bookshelfui-prof-defaultview-images": "이미지",
+	"bs-bookshelfui-chapterpager-previous": "이전",
+	"bs-bookshelfui-chapterpager-next": "다음"
 }

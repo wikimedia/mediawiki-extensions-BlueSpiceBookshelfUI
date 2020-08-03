@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Mguix"
 		]
 	},
 	"bookshelfbookui": "Editor de llibres",
@@ -33,5 +34,7 @@
 	"bookshelf-summary": "Llibres generals",
 	"bs-bookshelfui-prof-defaultview": "Vista per defecte",
 	"bs-bookshelfui-prof-defaultview-grid": "Graella",
-	"bs-bookshelfui-prof-defaultview-images": "Imatges"
+	"bs-bookshelfui-prof-defaultview-images": "Imatges",
+	"bs-bookshelfui-chapterpager-previous": "Anterior",
+	"bs-bookshelfui-chapterpager-next": "Següent"
 }
