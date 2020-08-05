@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-bookshelfui-ctxmnu-tag-edit": "Muokkaa asetuksia",
-	"bs-bookshelfui-dlg-metadata-title": "Metadata"
+	"bs-bookshelfui-dlg-metadata-title": "Metadata",
+	"bs-bookshelfui-chapterpager-previous": "Edellinen",
+	"bs-bookshelfui-chapterpager-next": "Seuraava"
 }
