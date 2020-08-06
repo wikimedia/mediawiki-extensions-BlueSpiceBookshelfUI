@@ -79,5 +79,7 @@
 	"bookshelf-summary": "Libros generales",
 	"bs-bookshelfui-prof-defaultview": "Vista predeterminada",
 	"bs-bookshelfui-prof-defaultview-grid": "Cuadrícula",
-	"bs-bookshelfui-prof-defaultview-images": "Imágenes"
+	"bs-bookshelfui-prof-defaultview-images": "Imágenes",
+	"bs-bookshelfui-chapterpager-previous": "Anterior",
+	"bs-bookshelfui-chapterpager-next": "Siguiente"
 }
