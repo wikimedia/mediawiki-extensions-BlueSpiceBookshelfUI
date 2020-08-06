@@ -62,10 +62,15 @@
 	"bs-bookshelfui-bookmetatag-docummenttype": "ドキュメント種類",
 	"bs-bookshelfui-bookmetatag-version": "バージョン",
 	"bs-bookshelfui-extjs-tooltip-copy": "コピー",
-	"right-bookshelfbookmanager-viewspecialpage": "特別ページ [[Special:BookshelfBookManager]] にアクセスする",
+	"right-bookshelfbookmanager-viewspecialpage": "特別ページ [[Special:BookshelfBookManager]] にアクセス",
 	"bookshelf": "本棚",
 	"bookshelf-summary": "一般書籍",
 	"bs-bookshelfui-prof-defaultview": "既定の表示",
 	"bs-bookshelfui-prof-defaultview-grid": "グリッド",
-	"bs-bookshelfui-prof-defaultview-images": "画像"
+	"bs-bookshelfui-prof-defaultview-images": "画像",
+	"action-bookshelfbookmanager-viewspecialpage": "特別ページ [[Special:BookshelfBookManager]] へのアクセス",
+	"right-bookshelfbookui-viewspecialpage": "特別ページ [[Special:BookshelfBookUI]] にアクセス",
+	"action-bookshelfbookui-viewspecialpage": "特別ページ [[Special:BookshelfBookUI]] へのアクセス",
+	"right-bookshelf-viewspecialpage": "特別ページ [[Special:Bookshelf]] にアクセス",
+	"action-bookshelf-viewspecialpage": "特別ページ [[Special:Bookshelf]] へのアクセス"
 }

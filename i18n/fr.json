@@ -99,5 +99,7 @@
 	"bs-bookshelfui-prof-defaultview-grid": "Grille",
 	"bs-bookshelfui-prof-defaultview-images": "Images",
 	"right-bookshelf-viewspecialpage": "Accéder à la page spéciale [[Special:Bookshelf]]",
-	"action-bookshelf-viewspecialpage": "accéder à la page spéciale [[Special:Bookshelf]]"
+	"action-bookshelf-viewspecialpage": "accéder à la page spéciale [[Special:Bookshelf]]",
+	"bs-bookshelfui-chapterpager-previous": "Précédent",
+	"bs-bookshelfui-chapterpager-next": "Suivant"
 }

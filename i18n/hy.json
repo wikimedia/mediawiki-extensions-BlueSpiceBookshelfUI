@@ -17,5 +17,7 @@
 	"bs-bookshelfui-prof-defaultview-images": "Պատկերներ",
 	"bs-bookshelfui-dlg-copy-title": "Պատճենել \"$1\"",
 	"bs-bookshelfui-dlg-copy-name-addition": "(պատճեն)",
-	"bs-bookshelfui-extjs-tooltip-copy": "Պատճենել"
+	"bs-bookshelfui-extjs-tooltip-copy": "Պատճենել",
+	"bs-bookshelfui-chapterpager-previous": "Նախորդ",
+	"bs-bookshelfui-chapterpager-next": "Հաջորդ"
 }

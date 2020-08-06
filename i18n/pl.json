@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Rail",
 			"WaldiSt"
 		]
 	},
@@ -21,5 +22,7 @@
 	"bs-bookshelfui-bookmetatag-department": "Dział",
 	"bs-bookshelfui-bookmetatag-version": "Wersja",
 	"bs-bookshelfui-extjs-tooltip-copy": "Kopiuj",
-	"bs-bookshelfui-prof-defaultview-images": "Obrazy"
+	"bs-bookshelfui-prof-defaultview-images": "Obrazy",
+	"bs-bookshelfui-chapterpager-previous": "Wstecz",
+	"bs-bookshelfui-chapterpager-next": "Dalej"
 }

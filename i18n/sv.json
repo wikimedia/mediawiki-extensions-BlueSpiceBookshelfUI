@@ -78,5 +78,7 @@
 	"bs-bookshelfui-bookmetatag-department": "Avdelning",
 	"right-bookshelfbookmanager-viewspecialpage": "Besök specialsidan [[Special:BookshelfBookManager]]",
 	"action-bookshelfbookmanager-viewspecialpage": "besök specialsidan [[Special:BookshelfBookManager]]",
-	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Antal resultat att returnera"
+	"apihelp-bs-bookshelf-mass-add-page-store-param-limit": "Antal resultat att returnera",
+	"bs-bookshelfui-chapterpager-previous": "Föregående",
+	"bs-bookshelfui-chapterpager-next": "Nästa"
 }

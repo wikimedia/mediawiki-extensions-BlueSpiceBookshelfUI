@@ -96,5 +96,7 @@
 	"bs-bookshelfui-prof-defaultview-grid": "Raster",
 	"bs-bookshelfui-prof-defaultview-images": "Bilder",
 	"right-bookshelf-viewspecialpage": "Zugriff auf die Spezialseite [[Special:Bookshelf|Bücherregal]]",
-	"action-bookshelf-viewspecialpage": "die Spezialseite [[Special:Bookshelf|Bücherregal]] aufzurufen"
+	"action-bookshelf-viewspecialpage": "die Spezialseite [[Special:Bookshelf|Bücherregal]] aufzurufen",
+	"bs-bookshelfui-chapterpager-previous": "Zurück",
+	"bs-bookshelfui-chapterpager-next": "Weiter"
 }
