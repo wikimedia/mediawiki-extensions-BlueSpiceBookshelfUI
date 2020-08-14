@@ -96,7 +96,9 @@
 		"BlueSpiceBookshelfUIAlias": "languages/BookshelfUI.alias.php"
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\BookshelfUI\\": "src/",
+		"BlueSpice\\BookshelfUI\\": "src/"
+	},
+	"TestAutoloadNamespaces": {
 		"BlueSpice\\BookshelfUI\\Tests\\": "tests/phpunit/"
 	},
 	"AutoloadClasses": {
