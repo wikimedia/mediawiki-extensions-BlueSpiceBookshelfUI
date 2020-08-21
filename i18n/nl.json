@@ -8,6 +8,7 @@
 	"bs-bookshelfui-widget-editor-link-text": "Dit boek bewerken",
 	"bs-bookshelfui-new-book-title": "Nieuw boek aanmaken",
 	"bs-bookshelfui-delete-book-title": "Boek verwijderen",
+	"bs-bookshelfui-export-selection": "Selectie exporteren",
 	"bs-bookshelfui-manager-title": "Titel",
 	"bs-bookshelfui-manager-deletingprogress-title": "Verwijderen...",
 	"bs-bookshelfui-manager-deletionfailure-text": "De volgende fout trad op bij het verwijderen van het boek: $1",
