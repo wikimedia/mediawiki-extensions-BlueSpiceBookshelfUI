@@ -2,8 +2,6 @@
 
 namespace BlueSpice\BookshelfUI\Hook\BeforePageDisplay;
 
-use BlueSpice\Services;
-
 class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 
 	protected function doProcess() {
@@ -11,7 +9,7 @@ class AddResources extends \BlueSpice\Hook\BeforePageDisplay {
 		$this->out->addModules( 'ext.bluespice.bookshelfUI.navigationTab' );
 		$this->out->addModuleStyles( 'ext.bluespice.bookshelfUI.pager.navigation.styles' );
 
-		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$config = $this->getConfig();
 		$pagerBeforeContent = $config->get( 'BookShelfUIShowChapterNavigationPagerBeforeContent' );
 		$pagerAfterContent = $config->get( 'BookShelfUIShowChapterNavigationPagerAfterContent' );
 
