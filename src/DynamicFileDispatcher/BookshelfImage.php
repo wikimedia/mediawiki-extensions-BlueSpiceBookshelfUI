@@ -72,7 +72,7 @@ class BookshelfImage extends ArticlePreviewImage {
 	 * @return string
 	 */
 	protected function buildFallbackURL() {
-		$dfdUrlBuilder = \BlueSpice\Services::getInstance()
+		$dfdUrlBuilder = MediaWikiServices::getInstance()
 			->getService( 'BSDynamicFileDispatcherUrlBuilder' );
 
 		$extendedToc = $this->pageHierarchyProvider->getExtendedTOCArray();
