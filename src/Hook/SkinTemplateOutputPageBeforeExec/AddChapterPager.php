@@ -4,7 +4,6 @@ namespace BlueSpice\BookshelfUI\Hook\SkinTemplateOutputPageBeforeExec;
 
 use BlueSpice\BookshelfUI\ChapterPager;
 use BlueSpice\Hook\SkinTemplateOutputPageBeforeExec;
-use BlueSpice\Services;
 use BlueSpice\SkinData;
 use PageHierarchyProvider;
 
@@ -27,7 +26,7 @@ class AddChapterPager extends SkinTemplateOutputPageBeforeExec {
 	}
 
 	protected function doProcess() {
-		$config = Services::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$config = $this->getConfig();
 		$pagerBeforeContent = $config->get( 'BookShelfUIShowChapterNavigationPagerBeforeContent' );
 		$pagerAfterContent = $config->get( 'BookShelfUIShowChapterNavigationPagerAfterContent' );
 
