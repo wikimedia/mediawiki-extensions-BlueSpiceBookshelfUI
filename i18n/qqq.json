@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MuratTheTurkish",
 			"Patric Wirth"
 		]
 	},
@@ -10,14 +11,14 @@
 	"bookshelfbookmanager": "Special page name for [[Special:BookshelfBookUI]] special page.\n{{Identical|Book Manager}}",
 	"bs-bookshelfui-editor-no-title-provided": "Error message when given given subpage as parameter on the [[Special:BookshelfBookUI]] specialpage is not a valid page",
 	"bs-bookshelfui-editor-title": "Header for [[Special:BookshelfBookUI]] special page when a page was given as a subpage.\n{{Identical|Book Editor: $1}}.\n* $1 - Title of the page that was given as a subpage",
-	"bs-bookshelfui-widget-editor-link-text": "Context menu entry, that allows editing of the current book.\n{{Identical|Edit this book}}",
+	"bs-bookshelfui-widget-editor-link-text": "Context menu entry, that allows editing of the current book.",
 	"bs-bookshelfui-new-book-title": "Title for the ExtJS dialoge, that allows creating a new book.",
 	"bs-bookshelfui-new-book-text": "Label for the text input box for the new book.\n{{Identical|Book title}}",
 	"bs-bookshelfui-delete-book-title": "Title of the book deletion prompt",
 	"bs-bookshelfui-delete-book-text": "Text of the book deletion promt that asks the user if the user really wants to delete the book. It also should warn, that the \"bookshelf\" tag will not be removed automatically from the linked pages.",
 	"bs-bookshelfui-export-selection": "Label for the button that allows to export the current selection from a book.\n{{Identical|Export selection}}",
 	"bs-bookshelfui-save-and-modify": "Label for the button that saves the current book and adds the book navigaion to all including pages",
-	"bs-bookshelfui-edit-source": "Label for the button that opens the source page - the book is saved in - in edit mode.\n{{Identical|Edit source page}}",
+	"bs-bookshelfui-edit-source": "Label for the button that opens the source page. The book is saved in edit mode.",
 	"bs-bookshelfui-open-source": "Label for the button that opens the source page, the book is saved in.\n{{Identical|Show source wikipage}}",
 	"bs-bookshelfui-bookui-savingprogress-title": "Title of the progress promt that shows while the book is saved.\nSaving Book",
 	"bs-bookshelfui-bookui-savingprogress-text": "Text of the progress promt that shows while the book is saved.\nPlease wait until the book is saved to the server",
@@ -32,7 +33,7 @@
 	"bs-bookshelfui-dlg-choosewikipage-cbxArticleLabel": "Label for the select field, that allows selecting a page",
 	"bs-bookshelfui-dlg-choosewikipage-tfDisplayName": "Label for the text form field that allows setting a display title for the selected page",
 	"bs-bookshelfui-ctxmnu-open": "Context menu entry that opens the page in a new window.",
-	"bs-bookshelfui-ctxmnu-edit": "Context menu entry that allows editing of the display title of the selected page.\n{{Identical|Edit display title}}",
+	"bs-bookshelfui-ctxmnu-edit": "Context menu entry that allows editing of the display title of the selected page.",
 	"bs-bookshelfui-ctxmnu-delete": "Context menu entry that allows editing of the display title of the selected page.\n{{Identical|Delete from book}}",
 	"bs-bookshelfui-ctxmnu-tag-edit": "Context menu entry that allows editing the tag settings.",
 	"bs-bookshelfui-dlg-metadata-title": "Title of the dialog that allows editing of the meta data.",

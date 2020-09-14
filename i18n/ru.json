@@ -3,6 +3,7 @@
 		"authors": [
 			"Amikeco",
 			"Diman Russkov",
+			"Facenapalm",
 			"Meerrahtar",
 			"Okras",
 			"Pacha Tchernof"
@@ -31,6 +32,7 @@
 	"bs-bookshelfui-dlg-metadata-title": "Метаданные",
 	"bs-bookshelfui-dlg-copy-title": "Копировать \"$1\"",
 	"bs-bookshelfui-dlg-copy-name-addition": "(копия)",
+	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|Одна книга|$1 книги|$1 книг}})",
 	"bs-bookshelfui-dlg-choosecategory-label": "Категория",
 	"bs-bookshelfui-dlg-type-label": "Источник",
 	"bs-bookshelfui-flyout-title": "Список книг",
