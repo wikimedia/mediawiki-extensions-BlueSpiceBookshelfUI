@@ -35,5 +35,6 @@
 	"bs-bookshelfui-bookmetatag-author2": "Tekijä 2",
 	"bs-bookshelfui-bookmetatag-version": "Versio",
 	"bookshelf": "Kirjahylly",
-	"bs-bookshelfui-prof-defaultview-images": "Kuvat"
+	"bs-bookshelfui-prof-defaultview-images": "Kuvat",
+	"bs-bookshelfui-bookui-savingprogress-title": "Tallennetaan kirjaa"
 }

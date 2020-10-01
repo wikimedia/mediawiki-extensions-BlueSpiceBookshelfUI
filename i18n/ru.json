@@ -3,6 +3,8 @@
 		"authors": [
 			"Amikeco",
 			"Diman Russkov",
+			"Facenapalm",
+			"Kareyac",
 			"Meerrahtar",
 			"Okras",
 			"Pacha Tchernof"
@@ -42,5 +44,8 @@
 	"bs-bookshelfui-manager-deletingprogress-text": "Удаление выбранной книги",
 	"bs-bookshelfui-dlg-copy-title": "Копировать \"$1\"",
 	"bs-bookshelfui-flyout-title": "Список книг",
-	"bookshelf": "Книжная полка"
+	"bookshelf": "Книжная полка",
+	"bs-bookshelfui-grouping-template-books": "({{PLURAL:$1|Одна книга|$1 книги|$1 книг}})",
+	"bs-bookshelfui-book-title-link-edit": "Редактировать книгу",
+	"bs-bookshelfui-book-title-link-edit-text": "Редактировать книгу"
 }
