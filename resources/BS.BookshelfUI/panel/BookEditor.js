@@ -12,6 +12,7 @@ Ext.define('BS.BookshelfUI.panel.BookEditor', {
 	bookTree: {},
 	bookMeta: [],
 	bookMetaConfig: {},
+	bookExists: false,
 	bookEdit: false,
 
 	isDirty: false,
@@ -214,10 +215,15 @@ Ext.define('BS.BookshelfUI.panel.BookEditor', {
 	},
 
 	onBtnOKClick: function() {
-		if( this.isDirty === false ) {
+		// Allow creating empty books
+		if( this.isDirty === false && !this.isNewEmpty() ) {
 			return;
 		}
 		this.doSaveHierarchy( false );
+	},
+
+	isNewEmpty: function() {
+		return this.bookTree.children.length === 0 && this.bookExists === false;
 	},
 
 	onMiSaveAndModifyArticles: function() {

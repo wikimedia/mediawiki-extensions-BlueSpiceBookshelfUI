@@ -104,6 +104,7 @@ class SpecialBookshelfBookUI extends ManagerBase {
 		$oData->bookMeta = $oMeta;
 		$oData->bookMetaConfig = $oBookMetaConfig;
 		$oData->bookEdit = $oTitle->userCan( 'edit' );
+		$oData->bookExists = $oTitle->exists();
 
 		Hooks::run( 'BSBookshelfBookUI', [ $this, $this->getOutput(), $oData ] );
 		$this->getOutput()->addJsConfigVars( 'bsBookshelfData', $oData );
